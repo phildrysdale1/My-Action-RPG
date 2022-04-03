@@ -22,3 +22,24 @@ vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
 x += hSpeed;
 y += vSpeed;
+
+//===== Update Sprite Index ======//
+
+var _oldSprite = sprite_index; // note last sprite in a temp var
+
+// If moving use run sprite
+if (inputMagnitude != 0)
+{
+	direction = inputDirection; // set to a different variable so that when key is released it doesn't immediately snap to 0 (right)
+	sprite_index = spriteRun;
+}	else sprite_index = spriteIdle; // else use idle sprite
+
+// if the sprite index is the same we don't need to restart the animation but continue where left off
+if (_oldSprite != sprite_index) 
+{
+	localFrame = 0
+}
+
+//===== Updating Image Index =====//
+
+PlayerAnimateSprite();

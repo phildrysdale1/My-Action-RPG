@@ -1,7 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},"order":1,},
+    {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":17,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":16,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":15,},
+    {"id":{"name":"scr_sprites","path":"scripts/scr_sprites/scr_sprites.yy",},"order":0,},
     {"id":{"name":"Room0","path":"rooms/Room0/Room0.yy",},"order":0,},
   ],
   "Options": [
