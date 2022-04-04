@@ -10,6 +10,3 @@ x2Target = RESOLUTION_W;
 
 lerpProgress = 0; // tells us how far along we are in the animation process (between 0-1)
 textProgress = 0; // Represents number of character in the text box
-
-textMessage = "Default message text";
-background = 0;

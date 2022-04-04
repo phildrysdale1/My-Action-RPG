@@ -1,5 +1,5 @@
 
-function PlayerStateFree()
+function PlayerStateFree() // Idle and walk
 {
 	//===== Movement =====//
 	#region
@@ -39,7 +39,7 @@ function PlayerStateFree()
 	}
 	#endregion
 }
-function PlayerStateRoll()
+function PlayerStateRoll() // Rolling
 {
 	//===== Movement =====//
 	hSpeed = lengthdir_x(speedRoll, direction);
@@ -66,5 +66,10 @@ function PlayerStateRoll()
 		ScreenShake(3, 30);
 	}
 }
+function PlayerStateLocked() // Frozen (for text, cutscenes etc)
+{
+	// do nothing
+}
+
 
 

@@ -12,6 +12,20 @@ if (keyboard_check_pressed(vk_space))
 	if (textProgress >= _textMessageLength) // if already fully displayed
 	{
 		instance_destroy(); // get rid of textbox
+		if (instance_exists(oTextQueued))
+		{
+			with (oTextQueued)
+			{
+				ticket--;
+			}
+		}
+		else 
+		{
+			with (oPlayer)
+			{
+				state = lastState;	
+			}
+		}
 	}
 	else
 	{
@@ -21,4 +35,6 @@ if (keyboard_check_pressed(vk_space))
 		}
 	}
 }
+
+
 

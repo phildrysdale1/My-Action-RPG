@@ -37,4 +37,46 @@ function NineSliceBoxStretched(sprite, x1, y1, x2, y2, index)
 	draw_sprite_part_ext(argument0, _index, _size, _size * 2, 1, _size, _x1 + _size, _y1 + _h - (_size), _w - (_size * 2), 1, c_white,1);
 
 
+}// Create new Textbox
+function NewTextBox()
+{
+	var _obj;
+
+	if (instance_exists(oText))
+	{
+		_obj = oTextQueued;
+	}
+	else
+	{
+		_obj = oText;
+	}
+	with (instance_create_layer(0,0,"Instances",_obj))
+	{
+	textMessage = argument[0];
+		if (instance_exists(other)) // other identifies the object that called the script
+		{
+			originInstance = other.id;
+		}
+		else
+		{
+			originInstance = noone;
+		}
+		
+		if (argument_count > 1) 
+		{
+			background = argument[1];
+		}
+		else 
+		{
+			background = 1;
+		}
+	}
+	with (oPlayer)
+	{
+		if (state !=PlayerStateLocked)
+		{
+			lastState = state;	
+			state = PlayerStateLocked;
+		}
+	}
 }

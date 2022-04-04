@@ -1,5 +1,6 @@
 // Set player state default
 state = PlayerStateFree;
+lastState = state;
 
 
 // Get layer ID for collision map
@@ -25,5 +26,6 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
