@@ -1,8 +1,12 @@
 {
   "resources": [
+    {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},"order":2,},
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":3,},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},"order":1,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":2,},
-    {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},"order":2,},
+    {"id":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"order":1,},
+    {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},"order":1,},
+    {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},"order":0,},
     {"id":{"name":"sPlayerRoll","path":"sprites/sPlayerRoll/sPlayerRoll.yy",},"order":1,},
     {"id":{"name":"scr_collsions","path":"scripts/scr_collsions/scr_collsions.yy",},"order":2,},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"order":0,},
@@ -10,7 +14,8 @@
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"scr_sprites","path":"scripts/scr_sprites/scr_sprites.yy",},"order":0,},
     {"id":{"name":"scr_player_states","path":"scripts/scr_player_states/scr_player_states.yy",},"order":3,},
-    {"id":{"name":"Room0","path":"rooms/Room0/Room0.yy",},"order":0,},
+    {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":2,},
+    {"id":{"name":"rParent","path":"rooms/rParent/rParent.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -24,7 +29,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room0","path":"rooms/Room0/Room0.yy",},},
+    {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
+    {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
+    {"roomId":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -41,7 +48,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Player.yy","order":4,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Player.yy","order":1,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Player.yy","order":1,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Meta.yy","order":2,"resourceVersion":"1.0","name":"Meta","tags":[],"resourceType":"GMFolder",},
   ],
