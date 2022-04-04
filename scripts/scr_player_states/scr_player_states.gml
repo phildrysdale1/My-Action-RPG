@@ -48,6 +48,7 @@ function PlayerStateRoll()
 	moveDistanceRemaining = max(0, moveDistanceRemaining - speedRoll);
 	var _collided = PlayerCollision();
 	
+	
 	//===== Update Sprite ======//
 	sprite_index = spriteRoll;
 	var _totalFrames = sprite_get_number(sprite_index)/4;
@@ -58,5 +59,12 @@ function PlayerStateRoll()
 	{
 		state = PlayerStateFree;
 	}	
+	
+	if (_collided)
+	{
+		state = PlayerStateFree;
+		ScreenShake(3, 30);
+	}
 }
+
 
