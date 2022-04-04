@@ -1,3 +1,6 @@
+// Get layer ID for collision map
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+
 // manually override animation on player sprite
 image_speed	= 0;
 
@@ -15,4 +18,5 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0
+
 

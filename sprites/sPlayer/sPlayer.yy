@@ -105,8 +105,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "GMS2_aRPG",
-    "path": "GMS2_aRPG.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayer",
