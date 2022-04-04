@@ -15,34 +15,9 @@ keyItem = keyboard_check_pressed(ord("K"));
 inputDirection = point_direction(0,0,keyRight - keyLeft,keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 #endregion
-//===== Movement =====//
-#region
-hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
-vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
-
-PlayerCollision();
-
-#endregion
-//===== Update Sprite Index ======//
-#region
-var _oldSprite = sprite_index; // note last sprite in a temp var
-
-// If moving use run sprite
-if (inputMagnitude != 0)
-{
-	direction = inputDirection; // set to a different variable so that when key is released it doesn't immediately snap to 0 (right)
-	sprite_index = spriteRun;
-}	else sprite_index = spriteIdle; // else use idle sprite
-
-// if the sprite index is the same we don't need to restart the animation but continue where left off
-if (_oldSprite != sprite_index) 
-{
-	localFrame = 0
-}
-
-//===== Updating Image Index =====//
-
-PlayerAnimateSprite();
-#endregion
 
 
+
+
+// Call the appropriate state function.
+script_execute(state)
