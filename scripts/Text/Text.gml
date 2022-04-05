@@ -72,6 +72,27 @@ function NewTextBox()
 		{
 			background = 1;
 		}
+		
+		if (argument_count > 2)
+		{
+			// trim markers from the response and store in seperate array
+			responses = argument[2];
+			for (var i = 0; i < array_length_1d(responses); i++)
+			{
+				var _markerPosition = string_pos(":", responses[i]); // marks the colon
+				responseScripts[i] = string_copy(responses[i],1,_markerPosition - 1); // creates new array with the number before the colon
+				responseScripts[i] = real(responseScripts[i]); //converts string to real
+				responses[i] = string_delete(responses[i],1, _markerPosition); //removes colon and number leaving just the string.
+				breakpoint = 10;
+			}
+		}
+		else
+		{
+			responses = [-1];
+			responseScripts = [-1]
+		}
+		
+		
 	}
 	with (oPlayer)
 	{
@@ -82,6 +103,9 @@ function NewTextBox()
 		}
 	}
 }
+
+
+
 
 
 

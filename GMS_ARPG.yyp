@@ -9,6 +9,7 @@
     {"id":{"name":"sSignpost","path":"sprites/sSignpost/sSignpost.yy",},"order":13,},
     {"id":{"name":"sQuestie","path":"sprites/sQuestie/sQuestie.yy",},"order":15,},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"order":1,},
+    {"id":{"name":"DialogueResponses","path":"scripts/DialogueResponses/DialogueResponses.yy",},"order":20,},
     {"id":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"order":3,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":1,},
     {"id":{"name":"Sprites","path":"scripts/Sprites/Sprites.yy",},"order":3,},

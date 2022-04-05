@@ -27,6 +27,16 @@ if (keyboard_check_pressed(ord("E")))
 		var _messageLength = string_length(message)
 		if (textProgress >= _messageLength) // if already fully displayed
 		{
+			
+			if (responses[0] != -1)
+			{
+				with(originInstance) 
+				{
+					DialogueResponses(other.responseScripts[other.responseSelected]);
+				}
+				
+			}
+			
 			instance_destroy(); // get rid of textbox
 			if (instance_exists(oTextQueued))
 			{
