@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Meta",
+    "path": "folders/Sprites/Meta.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCol",

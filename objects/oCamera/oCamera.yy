@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Managers",
-    "path": "folders/Objects/Managers.yy",
+    "name": "Meta",
+    "path": "folders/Objects/Meta.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCamera",
