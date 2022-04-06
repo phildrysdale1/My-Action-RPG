@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":3,},
+    {"id":{"name":"sPlayerHurt","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"order":16,},
     {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},"order":5,},
     {"id":{"name":"sPlayerRoll","path":"sprites/sPlayerRoll/sPlayerRoll.yy",},"order":7,},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":9,},
@@ -14,7 +15,7 @@
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":1,},
     {"id":{"name":"Sprites","path":"scripts/Sprites/Sprites.yy",},"order":3,},
     {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":5,},
-    {"id":{"name":"PlayerStateFree","path":"scripts/PlayerStateFree/PlayerStateFree.yy",},"order":7,},
+    {"id":{"name":"PlayerStates","path":"scripts/PlayerStates/PlayerStates.yy",},"order":7,},
     {"id":{"name":"Camera","path":"scripts/Camera/Camera.yy",},"order":11,},
     {"id":{"name":"Text","path":"scripts/Text/Text.yy",},"order":17,},
     {"id":{"name":"ScriptExecuteArray","path":"scripts/ScriptExecuteArray/ScriptExecuteArray.yy",},"order":19,},
@@ -29,6 +30,7 @@
     {"id":{"name":"oQuestNPC","path":"objects/oQuestNPC/oQuestNPC.yy",},"order":13,},
     {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},"order":1,},
     {"id":{"name":"rParent","path":"rooms/rParent/rParent.yy",},"order":3,},
+    {"id":{"name":"sShadow","path":"sprites/sShadow/sShadow.yy",},"order":17,},
     {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},"order":1,},
   ],
   "Options": [

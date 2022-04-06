@@ -62,7 +62,7 @@ function PlayerStateFree() // Idle and walk
 		//2. If there is nothing, or there is something but it has no script - Return to free state
 		if (activate == noone || activate.entityActivateScript == -1)
 		{
-			state = PlayerStateFree
+			state = PlayerStates
 		}
 		
 		//3. Otherwise, there is something and it has a script - activate!
@@ -108,7 +108,8 @@ function PlayerStateRoll() // Rolling
 	
 	if (_collided)
 	{
-		state = PlayerStateFree;
+		state = PlayerStateBonk;
+		moveDistanceRemaining = distanceBonk;
 		ScreenShake(3, 30);
 	}
 }
@@ -118,3 +119,28 @@ function PlayerStateLocked() // Frozen (for text, cutscenes etc)
 }
 
 
+function PlayerStateBonk()
+{
+	//===== Movement =====//
+	hSpeed = lengthdir_x(speedBonk, direction-180);
+	vSpeed = lengthdir_y(speedBonk, direction-180);
+	
+	moveDistanceRemaining = max(0, moveDistanceRemaining - speedBonk);
+	var _collided = PlayerCollision();
+	
+	
+	//===== Update Sprite ======//
+	sprite_index = sPlayerHurt;
+	image_index = CARDINAL_DIR+2
+	
+	//===== Change Height =====//
+	
+	z = sin(((moveDistanceRemaining / distanceBonk) * pi)) * distanceBonkHeight;
+		
+	//===== Change State =====//
+	if (moveDistanceRemaining <= 0) 
+	{
+		state = PlayerStateFree;
+	}	
+	
+}

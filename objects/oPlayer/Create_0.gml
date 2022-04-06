@@ -19,6 +19,13 @@ vSpeed = 0;
 speedWalk = 2.0;
 speedRoll = 3.0;
 distanceRoll = 52;
+distanceBonk = 40;
+distanceBonkHeight = 8;
+speedBonk = 1.5;
+
+// z positioning
+z = 0;
+
 
 // insert sprites into variables
 
@@ -28,6 +35,8 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
+
 
 
 
