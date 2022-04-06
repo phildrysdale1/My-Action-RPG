@@ -3,6 +3,9 @@ state = PlayerStateFree;
 lastState = state;
 stateAttack = AttackSlash;
 
+// track if entities that have been hit
+hitByAttack = -1;
+
 // Avoid endless loops from textboxes
 skipStepEvent = false;
 
@@ -36,6 +39,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 

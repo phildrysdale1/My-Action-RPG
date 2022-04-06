@@ -4,6 +4,7 @@
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":3,},
     {"id":{"name":"sPlayerHurt","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"order":16,},
     {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},"order":5,},
+    {"id":{"name":"sPlayerAttackSlashHB","path":"sprites/sPlayerAttackSlashHB/sPlayerAttackSlashHB.yy",},"order":19,},
     {"id":{"name":"sPlayerRoll","path":"sprites/sPlayerRoll/sPlayerRoll.yy",},"order":7,},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":9,},
     {"id":{"name":"sTextBoxBg","path":"sprites/sTextBoxBg/sTextBoxBg.yy",},"order":11,},
