@@ -7,3 +7,6 @@ if (!global.gamePaused)
 	depth = -bbox_bottom;	
 }
 
+// Decay flash from being hit
+
+flash = max(flash-0.04, 0);

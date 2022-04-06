@@ -52,9 +52,11 @@ function CalcAttack()
 				// Apply something to the entity hit.
 				with (hitID)
 				{
+					if(entityHitScript != -1)
+					{
+						script_execute(entityHitScript);
+					}
 					
-					
-					image_blend = c_red;
 					
 					
 				}

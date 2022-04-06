@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Meta",
-    "path": "folders/Scripts/Meta.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MACROS",
+  "name": "Entities",
   "tags": [],
   "resourceType": "GMScript",
 }
