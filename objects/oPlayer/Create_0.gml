@@ -1,6 +1,7 @@
 // Set player state default
 state = PlayerStateFree;
 lastState = state;
+stateAttack = AttackSlash;
 
 // Avoid endless loops from textboxes
 skipStepEvent = false;
@@ -35,6 +36,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 

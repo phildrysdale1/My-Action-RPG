@@ -39,6 +39,16 @@ function PlayerStateFree() // Idle and walk
 		moveDistanceRemaining = distanceRoll;
 		}	
 	#endregion
+	
+	//===== Attack Key State ===== //
+	#region
+	if (keyAttack)
+		{
+		state = PlayerStateAttack;
+		stateAttack = AttackSlash;
+		}	
+	#endregion
+	
 	//===== Activate Key Logic ===== //
 	#region
 	if (keyActivate)
@@ -113,13 +123,8 @@ function PlayerStateRoll() // Rolling
 		ScreenShake(3, 30);
 	}
 }
-function PlayerStateLocked() // Frozen (for text, cutscenes etc)
-{
-	// do nothing
-}
 
-
-function PlayerStateBonk()
+function PlayerStateBonk() // Knockback affect if roll into something
 {
 	//===== Movement =====//
 	hSpeed = lengthdir_x(speedBonk, direction-180);
@@ -144,3 +149,16 @@ function PlayerStateBonk()
 	}	
 	
 }
+
+function PlayerStateAttack() // All things stabby
+{
+script_execute(stateAttack);
+
+}
+
+function PlayerStateLocked() // Frozen (for text, cutscenes etc)
+{
+	// do nothing
+}
+
+
