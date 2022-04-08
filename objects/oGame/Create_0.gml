@@ -7,6 +7,13 @@ global.gamePaused = false;
 // Set global text speed
 global.textSpeed = .75;
 
+// global navigation settings
+global.targetRoom = -1;
+global.targetX = -1;
+global.targetY = -1;
+global.targetDirection = -1;
+
+
 // Set camera instance
 global.iCamera = instance_create_layer(0, 0, layer, oCamera);
 
@@ -16,6 +23,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

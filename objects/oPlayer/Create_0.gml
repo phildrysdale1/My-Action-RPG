@@ -31,6 +31,16 @@ speedBonk = 1.5;
 z = 0;
 
 
+// x & y setting for transitions
+
+if (global.targetX != -1)
+{
+	x = global.targetX;	
+	y = global.targetY;
+	direction = global.targetDirection;
+}
+
+
 // insert sprites into variables
 
 spriteRoll = sPlayerRoll;
@@ -39,6 +49,8 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
+
 
 
 
