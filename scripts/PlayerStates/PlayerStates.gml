@@ -156,9 +156,20 @@ script_execute(stateAttack);
 
 }
 
+function PlayerStateTransition() // Maintain player state through a room transition
+{
+	//  Movement
+	PlayerCollision();
+	
+	// Update Image Index
+	PlayerAnimateSprite();
+	
+}
+
 function PlayerStateLocked() // Frozen (for text, cutscenes etc)
 {
 	// do nothing
 }
+
 
 
