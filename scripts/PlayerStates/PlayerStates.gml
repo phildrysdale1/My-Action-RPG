@@ -166,10 +166,28 @@ function PlayerStateTransition() // Maintain player state through a room transit
 	
 }
 
+function PlayerStateAct()
+{
+	// Update Sprite
+	PlayerAnimateSprite();
+	
+	if (animationEnd)
+	{
+		state = PlayerStateFree;
+		animationEnd = false;
+		if (animationEndScript != -1)
+		{
+		 script_execute(animationEndScript);	
+		 animationEndScript = -1;
+		}
+	}
+}
+
 function PlayerStateLocked() // Frozen (for text, cutscenes etc)
 {
 	// do nothing
 }
+
 
 
 

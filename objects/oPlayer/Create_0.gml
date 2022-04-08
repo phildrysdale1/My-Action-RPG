@@ -30,6 +30,8 @@ speedBonk = 1.5;
 // z positioning
 z = 0;
 
+// run a particular script when animations end
+animationEndScript = -1;
 
 // x & y setting for transitions
 
@@ -49,6 +51,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 

@@ -13,6 +13,9 @@ global.targetX = -1;
 global.targetY = -1;
 global.targetDirection = -1;
 
+// global variable for if the player is carrying something
+global.iLifted = noone;
+
 
 // Set camera instance
 global.iCamera = instance_create_layer(0, 0, layer, oCamera);
@@ -23,6 +26,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

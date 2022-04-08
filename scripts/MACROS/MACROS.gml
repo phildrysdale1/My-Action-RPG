@@ -12,6 +12,9 @@ function MACROS() {
 	#macro TRANSITION_SPEED 0.02
 	#macro OUT 0
 	#macro IN 1
+	
+	#macro LIFTED 13 // height for things lifted by player
 }
+
 
 
