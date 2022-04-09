@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"PlayerActions","path":"scripts/PlayerActions/PlayerActions.yy",},"order":3,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":5,},
     {"id":{"name":"sPlantB","path":"sprites/sPlantB/sPlantB.yy",},"order":3,},

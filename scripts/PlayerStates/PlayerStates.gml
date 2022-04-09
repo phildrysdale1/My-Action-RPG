@@ -55,24 +55,32 @@ function PlayerStateFree() // Idle and walk
 	{
 		//1. Check for an entity to activate
 		
-		/*
+		
 		// Point based instance interaction
-		var _activateX = lengthdir_x(8, direction);
-		var _activateY = lengthdir_y(8, direction);
+		var _activateX = lengthdir_x(15, direction);
+		var _activateY = lengthdir_y(15, direction);
 		activate = instance_position(x+_activateX, y+_activateY, pEntity);
-		*/
 	
-		// Rectangle infront of player for instance interaction (more forgiving
+		/*
+		// Rectangle infront of player for instance interaction (more forgiving) but breaks throwing
 		var _activateX1 = lengthdir_x(16, direction+45);
 		var _activateY1 = lengthdir_y(16, direction+45);
 		var _activateX2 = lengthdir_x(8, direction-90);
 		var _activateY2 = lengthdir_y(8, direction-90);
 		activate = collision_rectangle(x+_activateX1, y+_activateY1, x+_activateX2,y+_activateY2, pEntity, false, true); 
-		
-		//2. If there is nothing, or there is something but it has no script - Return to free state
+		*/
+		//2. If there is nothing, or there is something but it has no script (if we are holding something, throw it) - Return to free state
 		if (activate == noone || activate.entityActivateScript == -1)
 		{
-			state = PlayerStates
+			// Throw something if held, otherwise do nothing
+			if (global.iLifted != noone)
+			{
+				PlayerThrow();
+			}
+			else
+			{
+				state = PlayerStateFree;
+			}
 		}
 		
 		//3. Otherwise, there is something and it has a script - activate!
@@ -187,6 +195,7 @@ function PlayerStateLocked() // Frozen (for text, cutscenes etc)
 {
 	// do nothing
 }
+
 
 
 

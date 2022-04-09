@@ -11,7 +11,7 @@ function EntityHitSolid()
 }
 
 // handle lifting for entities
-function ActivateLiftable(id)
+function ActivateLiftable(_id)
 {
 	if (global.iLifted == noone)
 	{
@@ -27,3 +27,4 @@ function ActivateLiftable(id)
 	
 	
 }
+
