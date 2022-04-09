@@ -1,3 +1,4 @@
+// Slime Wander State
 function SlimeWander()
 {
 	sprite_index = sprMove;
@@ -60,7 +61,7 @@ function SlimeWander()
 		}
 		
 	}
-}
+}// Slime Chase State
 function SlimeChase()
 {
 	sprite_index = sprMove;
@@ -90,9 +91,81 @@ function SlimeChase()
 		// Collide and Move
 		EnemyTileCollision();
 		
-		if (_distanceToGo >= enemyGiveUpRadius) 
+		if (_distanceToGo >= enemyGiveUpRadius) // Give up chase if player exits give up radius
 		{
 			state = ENEMYSTATE.WANDER;
+		}	
+		
+		// Check if close enough to launch an attack
+		if (point_distance(x, y, target.x, target.y) <= enemyAttackRadius)
+		{
+			state = ENEMYSTATE.ATTACK;
+			sprite_index = sprAttack;
+			image_index = 0;
+			image_speed = 1.0;
+			// target 8 px past the player
+			xTo += lengthdir_x(8, dir);
+			yTo += lengthdir_y(8, dir);
+		}
+		
+	}
+	
+}
+
+// Slime Attack State
+function SlimeAttack()
+{
+	// How fast to move
+	var _spd = enemySpeed;
+	
+	// Don't move while still getting ready to jump
+	if (image_index < 2) 
+	{
+		_spd = 0;	
+	}
+	
+	// Freeze animation while in mid-air and also after landing finishes
+	if (floor(image_index) == 3) || (floor(image_index == 5))
+	{
+		image_speed = 0;
+	}
+	
+	// How far we have to jump
+	var _distanceToGo = point_distance(x, y, xTo, yTo);
+	
+	// Begin landing end of the animation once we're nearly done
+	if (_distanceToGo < 4) && (image_index < 5)
+	{
+		image_speed = 1.0;
+	}
+	
+	// Move
+	if (_distanceToGo > _spd)
+	{
+		dir = point_direction(x, y, xTo, yTo);		
+		hSpeed = lengthdir_x(_spd, dir);
+		vSpeed = lengthdir_y(_spd, dir);
+		if (hSpeed != 0)
+		{
+			image_xscale = sign(hSpeed);	
+		}
+		// commit to move and stop moving if we hit a wall
+		if (EnemyTileCollision() == true)
+		{	
+			xTo = x;
+			yTo = y;
+		}
+		
+	}
+	else // wait for 15 frames before returning to chase
+	{
+		x = xTo;
+		y = yTo;
+		if (floor(image_index) == 5)
+		{
+			stateTarget = ENEMYSTATE.CHASE
+			stateWaitDuration = 15;
+			state = ENEMYSTATE.WAIT; 
 		}
 	}
 }

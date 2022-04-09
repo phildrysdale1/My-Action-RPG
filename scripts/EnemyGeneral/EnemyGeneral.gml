@@ -27,3 +27,15 @@ function EnemyTileCollision()
  
 return _collision;
 }
+ 
+ 
+// Enemy Wait State
+function EnemyWait()
+{
+	if (++stateWait >= stateWaitDuration)
+	{
+		stateWait = 0;
+		state = stateTarget;	
+	}
+}
+

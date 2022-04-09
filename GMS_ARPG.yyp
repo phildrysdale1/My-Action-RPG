@@ -16,6 +16,7 @@
     {"id":{"name":"sTextBoxBg","path":"sprites/sTextBoxBg/sTextBoxBg.yy",},"order":0,},
     {"id":{"name":"sSignpost","path":"sprites/sSignpost/sSignpost.yy",},"order":1,},
     {"id":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"order":2,},
+    {"id":{"name":"sSlimeAttack","path":"sprites/sSlimeAttack/sSlimeAttack.yy",},"order":7,},
     {"id":{"name":"sQuestie","path":"sprites/sQuestie/sQuestie.yy",},"order":0,},
     {"id":{"name":"sSlime","path":"sprites/sSlime/sSlime.yy",},"order":6,},
     {"id":{"name":"PlayerAttacks","path":"scripts/PlayerAttacks/PlayerAttacks.yy",},"order":0,},
