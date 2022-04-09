@@ -42,7 +42,7 @@ function PlayerStateFree() // Idle and walk
 	
 	//===== Attack Key State ===== //
 	#region
-	if (keyAttack)
+	if (keyAttack) && (global.iLifted == noone) // if attack key && not carrying something
 		{
 		state = PlayerStateAttack;
 		stateAttack = AttackSlash;
@@ -54,14 +54,45 @@ function PlayerStateFree() // Idle and walk
 	if (keyActivate)
 	{
 		//1. Check for an entity to activate
+		// create box in front of player to checking for entities
+		var _activateX = x + lengthdir_x(10, direction);
+		var _activateY = y + lengthdir_y(10, direction);
+		var _activateSize = 4;
+		var _activateList = ds_list_create();
+		activate = noone;
+		var _entitiesFound = collision_rectangle_list(
+			_activateX - _activateSize,
+			_activateY - _activateSize,
+			_activateX + _activateSize,
+			_activateY + _activateSize,
+			pEntity,
+			false,
+			true,
+			_activateList,
+			true
+		);
 		
+		// if the first instance we find is either our lifted entity or it has no script try the next one
 		
+		while (_entitiesFound > 0)
+		{
+			var _check = _activateList[| --_entitiesFound];
+			if (_check != global.iLifted) && (_check.entityActivateScript != -1)
+			{
+				activate = _check;
+				break;
+			}
+			
+		}
+		
+		ds_list_destroy(_activateList);
+		
+		/* old interaction text
 		// Point based instance interaction
 		var _activateX = lengthdir_x(15, direction);
 		var _activateY = lengthdir_y(15, direction);
 		activate = instance_position(x+_activateX, y+_activateY, pEntity);
-	
-		/*
+		//	slight better code but broken
 		// Rectangle infront of player for instance interaction (more forgiving) but breaks throwing
 		var _activateX1 = lengthdir_x(16, direction+45);
 		var _activateY1 = lengthdir_y(16, direction+45);
@@ -69,8 +100,11 @@ function PlayerStateFree() // Idle and walk
 		var _activateY2 = lengthdir_y(8, direction-90);
 		activate = collision_rectangle(x+_activateX1, y+_activateY1, x+_activateX2,y+_activateY2, pEntity, false, true); 
 		*/
+		
+		
+		
 		//2. If there is nothing, or there is something but it has no script (if we are holding something, throw it) - Return to free state
-		if (activate == noone || activate.entityActivateScript == -1)
+		if (activate == noone)
 		{
 			// Throw something if held, otherwise do nothing
 			if (global.iLifted != noone)
