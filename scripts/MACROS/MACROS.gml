@@ -14,7 +14,21 @@ function MACROS() {
 	#macro IN 1
 	
 	#macro LIFTED 13 // height for things lifted by player
+	
+	
+	// enemy states
+	enum ENEMYSTATE
+	{
+		IDLE,
+		WANDER,
+		CHASE,
+		ATTACK,
+		HURT,
+		DIE,
+		WAIT		
+	}
 }
+
 
 
 
