@@ -14,6 +14,9 @@ dir = 0;
 timePassed = 0;
 waitDuration = 60;
 wait = 0;
+aggroCheck = 0;
+aggroCheckDuration = 5;
+
 
 // Enemy Sprites
 
@@ -28,3 +31,4 @@ enemyScript[ENEMYSTATE.ATTACK] = -1;
 enemyScript[ENEMYSTATE.HURT] = -1;
 enemyScript[ENEMYSTATE.DIE] = -1;
 enemyScript[ENEMYSTATE.WAIT] = -1;
+
