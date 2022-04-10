@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Entities",
-    "path": "folders/Sprites/Entities.yy",
+    "name": "World",
+    "path": "folders/Sprites/Entities/World.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFrag_plant",

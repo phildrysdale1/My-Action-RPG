@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Entities",
-    "path": "folders/Sprites/Entities.yy",
+    "name": "NPCs",
+    "path": "folders/Sprites/Entities/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "sQuestie",
