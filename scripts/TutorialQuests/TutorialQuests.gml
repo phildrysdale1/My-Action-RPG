@@ -24,7 +24,7 @@ function ActivateHatCat()
 			else
 			{
 				//offer quest
-				NewTextBox("Hello there! You look like a brave adventurer\nWhat with the cape and all.",2);
+				NewTextBox("Hello there! You look like a brave adventurer. What with the cape and all.",2);
 				NewTextBox("Could you help me find my missing hat?",2, 
 				["4: Of course!", "5: This task is beneath me"]);
 				
@@ -52,7 +52,7 @@ function ActivateHatCat()
 			else
 			{
 				//clue reminder
-				NewTextBox("I think I left my hat in the scary\ncave to the north-east.",2);
+				NewTextBox("I think I left my hat in the scary cave to the north-east.",2);
 				NewTextBox("You might need some items to get there.",2);
 				
 			}
@@ -67,3 +67,4 @@ function ActivateHatCat()
 }
 			
 			
+

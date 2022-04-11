@@ -30,8 +30,9 @@ if (responses[0] != -1) && (textProgress >= string_length(message))
 		}
 }
 
-draw_text((x1+x2) * 0.5, y1 + 8, _print);
+draw_text_ext((x1+x2) * 0.5, y1 + 8, _print,15,(RESOLUTION_W-20));
 draw_set_color(c_white);
-draw_text((x1+x2) * 0.5, y1 + 7, _print);
+draw_text_ext((x1+x2) * 0.5, y1 + 7, _print,15,(RESOLUTION_W-20));
+
 
 
