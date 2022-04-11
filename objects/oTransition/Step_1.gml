@@ -1,8 +1,13 @@
 /// @description Progress transition
+
+
 // Ensure player is locked to transition state til complete
 with (oPlayer) 
 {
-	state = PlayerStateTransition;
+	if (state != PlayerStateDead)
+	{
+		state = PlayerStateTransition;
+	}
 }
 
 //
@@ -27,3 +32,4 @@ else // leading == IN
 		instance_destroy();
 	}
 }
+

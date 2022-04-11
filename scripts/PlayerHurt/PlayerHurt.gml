@@ -18,7 +18,11 @@ function HurtPlayer(_direction, _force, _damage)
 		}
 		else
 		{
-			// kill player
+			with (oPlayer)
+			{
+				state = PlayerStateDead;
+			}
+			
 		}
 	}
 

@@ -6,8 +6,8 @@ x2 = lerp(x2,x2Target,lerpProgress);
 
 // Cylce through responses
 
-keyUp = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
-keyDown = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+keyUp = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(8, gp_padu);
+keyDown = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(8, gp_padd);
 responseSelected += (keyDown - keyUp);
 
 var _max = array_length_1d(responses)-1;
@@ -22,7 +22,7 @@ if (responseSelected < _min)
 	}
 		
 		
-if (keyboard_check_pressed(ord("E")))
+if (keyboard_check_pressed(ord("E")) || gamepad_button_check_pressed(8, gp_face1))
 	{
 		var _messageLength = string_length(message)
 		if (textProgress >= _messageLength) // if already fully displayed
