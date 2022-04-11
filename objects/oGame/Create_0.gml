@@ -14,7 +14,7 @@ global.targetY = -1;
 global.targetDirection = -1;
 
 // global player variables
-global.playerHealthMax = 3;
+global.playerHealthMax = 3.0
 global.playerHealth = global.playerHealthMax;
 
 // global variable for if the player is carrying something
@@ -30,6 +30,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

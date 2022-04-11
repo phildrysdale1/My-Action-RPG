@@ -27,6 +27,13 @@ distanceBonk = 40;
 distanceBonkHeight = 8;
 speedBonk = 1.5;
 
+// tracking player health and damage
+invulnerable = 0; // time not true/false
+flash = 0;
+flashShader = shRedFlash;
+
+
+
 // z positioning
 z = 0;
 
@@ -51,6 +58,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 
