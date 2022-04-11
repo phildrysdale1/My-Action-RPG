@@ -5,6 +5,7 @@
     {"id":{"name":"sSlimeDie","path":"sprites/sSlimeDie/sSlimeDie.yy",},"order":3,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":5,},
     {"id":{"name":"sPlantB","path":"sprites/sPlantB/sPlantB.yy",},"order":2,},
+    {"id":{"name":"TutorialQuests","path":"scripts/TutorialQuests/TutorialQuests.yy",},"order":0,},
     {"id":{"name":"sPlayerHurt","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"order":3,},
     {"id":{"name":"Entities","path":"scripts/Entities/Entities.yy",},"order":26,},
     {"id":{"name":"EnemyGeneral","path":"scripts/EnemyGeneral/EnemyGeneral.yy",},"order":1,},
@@ -126,6 +127,7 @@
     {"folderPath":"folders/Sprites/Entities/Enemies.yy","order":5,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Entities/NPCs.yy","order":6,"resourceVersion":"1.0","name":"NPCs","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Entities/World.yy","order":7,"resourceVersion":"1.0","name":"World","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Quests.yy","order":30,"resourceVersion":"1.0","name":"Quests","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
