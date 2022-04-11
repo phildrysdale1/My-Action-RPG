@@ -17,6 +17,9 @@ function ActivateLiftable(_id)
 	{
 		PlayerActOutAnimation(sPlayerLift);
 		
+		spriteIdle = sPlayerCarrying
+		spriteRun = sPlayerRunCarrying	
+		
 		global.iLifted = argument0;
 		with (global.iLifted)
 		{
@@ -27,4 +30,5 @@ function ActivateLiftable(_id)
 	
 	
 }
+
 
