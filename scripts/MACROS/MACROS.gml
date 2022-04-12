@@ -34,7 +34,7 @@ function MACROS() {
 		NONE,
 		BOMB,
 		BOW,
-		HOOKSHOT,
+		HOOK,
 		TYPE_COUNT
 	}
 }

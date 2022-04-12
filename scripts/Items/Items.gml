@@ -23,7 +23,24 @@ function DropItems(x, y, _items)
 	{
 		instance_create_layer(argument0, argument1, "Instances", argument2[0]);
 	}
+}
+function UseItemBomb()
+{
+	if (global.playerAmmo[ITEM.BOMB > 0]) && (global.iLifted == noone)
+	{
+		global.playerAmmo[ITEM.BOMB]--;
+		var _bomb = instance_create_layer(x, y, "Instances", oBomb);
+		ActivateLiftable(_bomb);
+	}
+	
+}
 
+function UseItemBow()
+{
 
+}
+
+function UseItemHook()
+{
 
 }

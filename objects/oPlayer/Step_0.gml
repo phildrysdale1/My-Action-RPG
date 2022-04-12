@@ -15,7 +15,7 @@ keyDown = keyboard_check(ord("S")) || keyboard_check(vk_down) || gamepad_button_
 keyActivate = keyboard_check_pressed(ord("E")) || gamepad_button_check_pressed(8, gp_face1);
 keyRoll = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(8, gp_face2);
 keyAttack = keyboard_check_pressed(ord("J"))  || gamepad_button_check_pressed(8, gp_face3);
-keyItem = keyboard_check_pressed(ord("K"));
+keyItem = keyboard_check_pressed(ord("K")) || gamepad_button_check_pressed(8, gp_face4);;
 #endregion
 //===== Determine player direction from key inputs ===== //
 #region
@@ -39,6 +39,7 @@ if (!global.gamePaused)
 // Depth Sorting
 
 depth = -bbox_bottom;
+
 
 
 
