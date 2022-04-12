@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pEntity",
-    "path": "objects/pEntity/pEntity.yy",
+    "name": "oPlant",
+    "path": "objects/oPlant/oPlant.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

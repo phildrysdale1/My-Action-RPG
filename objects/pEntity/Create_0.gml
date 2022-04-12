@@ -6,9 +6,13 @@ flashShader = shWhiteFlash;
 lifted = 0; // is it lifted
 thrown = 0; // is it thrown
 
+//fix for static items
+spd = 0;
+
 // item options
 entityDropList = -1;
 
 // Get New Tilemap// Done here and in room start because some child entities might be persistent and being in create alone would not allow for them to update.
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+
