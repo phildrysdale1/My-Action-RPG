@@ -48,16 +48,24 @@ if (global.targetX != -1)
 	y = global.targetY;
 	direction = global.targetDirection;
 }
-
-
 // insert sprites into variables
 
+if (global.iLifted!=noone) {	// adjust sprites if carrying 
+	spriteIdle=sPlayerCarrying;
+	spriteRun=sPlayerRunCarrying;
+}
+else
+{								// regular sprites if not carrying
 spriteRoll = sPlayerRoll;
 spriteRun = sPlayerRun;
 spriteIdle = sPlayer;
+}
+
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
+
 
 
 

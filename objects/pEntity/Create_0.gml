@@ -6,5 +6,5 @@ uFlash = shader_get_uniform(shWhiteFlash, "flash");
 lifted = 0; // is it lifted
 thrown = 0; // is it thrown
 
-
-
+// item options
+entityDropList = -1;
