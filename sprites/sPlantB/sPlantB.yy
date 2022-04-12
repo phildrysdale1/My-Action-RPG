@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "World",
-    "path": "folders/Sprites/Entities/World.yy",
+    "name": "Plants",
+    "path": "folders/Sprites/Entities/World/Plants.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlantB",

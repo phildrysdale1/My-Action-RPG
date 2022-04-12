@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "World",
-    "path": "folders/Sprites/Entities/World.yy",
+    "name": "items",
+    "path": "folders/Sprites/Entities/World/items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCoin",

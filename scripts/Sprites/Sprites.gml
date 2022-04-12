@@ -30,5 +30,15 @@ function PlayerActOutAnimation(_sprite, _endScript =-1)
 	PlayerAnimateSprite();
 }
 
+function PlayerDropItem()
+{
+	global.iLifted = noone;
+	with (oPlayer) 
+	{	
+		spriteIdle = sPlayer;
+		spriteRun = sPlayerRun;
+	}
+}
+
 
 

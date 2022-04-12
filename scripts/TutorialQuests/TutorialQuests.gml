@@ -14,12 +14,7 @@ function ActivateHatCat()
 				global.questStatus[? "TheHatQuest"] = 2
 				with (oQuestNPC) sprite_index = sQuestieHat;
 				with (oHat) instance_destroy();
-				global.iLifted = noone;
-				with (oPlayer)
-				{
-					spriteIdle = sPlayer;
-					spriteRun = sPlayerRun;
-				}
+				PlayerDropItem();
 			}
 			else
 			{
@@ -41,12 +36,7 @@ function ActivateHatCat()
 				global.questStatus[? "TheHatQuest"] = 2
 				with (oQuestNPC) sprite_index = sQuestieHat;
 				with (oHat) instance_destroy();
-				global.iLifted = noone;
-				with (oPlayer)
-				{
-					spriteIdle = sPlayer;
-					spriteRun = sPlayerRun;
-				}
+				PlayerDropItem();
 				
 			}
 			else
@@ -67,4 +57,5 @@ function ActivateHatCat()
 }
 			
 			
+
 

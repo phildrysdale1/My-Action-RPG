@@ -5,10 +5,11 @@ if (entityShadow)
 	draw_sprite(sShadow,0,floor(x),floor(y));
 }
 
-//===== On impact flash =====//
+//===== flash settings =====//
 if (flash != 0)
 {
-	shader_set(shWhiteFlash)
+	shader_set(flashShader)
+	uFlash = shader_get_uniform(flashShader, "flash");
 	shader_set_uniform_f(uFlash, flash);
 }
 
@@ -26,7 +27,7 @@ draw_sprite_ext (
 	image_alpha
 );
 
-if (shader_current() != 1)
+if (shader_current() != -1)
 {
 	shader_reset();
 }

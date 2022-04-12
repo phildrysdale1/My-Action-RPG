@@ -21,8 +21,5 @@ function PlayerThrow()
 	}
 	PlayerActOutAnimation(sPlayerLift);
 	
-	// turn these into a dropped function at some point
-	global.iLifted = noone;
-	spriteIdle = sPlayer;
-	spriteRun = sPlayerRun;
+	PlayerDropItem();
 }
