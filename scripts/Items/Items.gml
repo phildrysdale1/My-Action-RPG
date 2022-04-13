@@ -44,12 +44,6 @@ function UseItemBow()
 	}
 }
 
-function UseItemHook()
-{
-
-}
-
-
 function PlayerFireArrow()
 {
 	with (instance_create_depth(floor(x), floor(y)-7, depth, oArrow))
@@ -60,4 +54,11 @@ function PlayerFireArrow()
 		image_index = CARDINAL_DIR;
 		speed = 6;
 	}	
+}
+
+function UseItemHook()
+{
+	state = PlayerStateHook;
+	localFrame = 0;
+	
 }

@@ -28,11 +28,12 @@ global.playerAmmo[ITEM.BOW] = 0;
 
 // TEMP FOR TESTING
 global.playerItemUnlocked[ITEM.BOMB] = true;
+global.playerItemUnlocked[ITEM.BOW] = true;
+global.playerItemUnlocked[ITEM.HOOK] = true;
 global.playerHasAnyItems = true;
 global.playerAmmo[ITEM.BOMB] = 5;
-global.playerItemUnlocked[ITEM.BOW] = true;
 global.playerAmmo[ITEM.BOW] = 15;
-global.playerItemUnlocked[ITEM.HOOK] = true;
+
 
 
 // manage quests

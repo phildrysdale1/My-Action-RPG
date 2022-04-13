@@ -25,23 +25,33 @@ vSpeed = 0;
 // set default speeds & distances for various states
 speedWalk = 2.0;
 speedRoll = 3.0;
+speedBonk = 1.5;
+speedHook = 3.0;
+
 distanceRoll = 52;
 distanceBonk = 40;
 distanceBonkHeight = 8;
-speedBonk = 1.5;
+distanceHook = 88;
+
 
 // tracking player health and damage
 invulnerable = 0; // time not true/false
 flash = 0;
 flashShader = shRedFlash;
 
-
-
 // z positioning
 z = 0;
 
 // run a particular script when animations end
 animationEndScript = -1;
+
+// hook values
+hook = 0;
+hookX = 0;
+hookY = 0;
+hookSize = sprite_get_width(sHookChain);
+
+
 
 // x & y setting for transitions
 
@@ -67,6 +77,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 
