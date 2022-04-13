@@ -145,8 +145,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "items",
-    "path": "folders/Sprites/Entities/World/items.yy",
+    "name": "Weapons",
+    "path": "folders/Sprites/Entities/World/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sExplode",

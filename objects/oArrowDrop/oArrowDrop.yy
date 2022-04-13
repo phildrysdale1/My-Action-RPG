@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBombDrop",
-    "path": "sprites/sBombDrop/sBombDrop.yy",
+    "name": "sArrowDrop",
+    "path": "sprites/sArrowDrop/sArrowDrop.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
     "path": "folders/Objects/Entities/Weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBombDrop",
+  "name": "oArrowDrop",
   "tags": [],
   "resourceType": "GMObject",
 }

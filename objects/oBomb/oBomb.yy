@@ -36,8 +36,8 @@
     {"propertyId":{"name":"entityThrowBreak","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/Entities/World.yy",
+    "name": "Weapons",
+    "path": "folders/Objects/Entities/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBomb",

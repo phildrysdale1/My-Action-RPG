@@ -4,14 +4,13 @@ function PlayerStateFree() // Idle and walk
 
 {
 	//===== Movement =====//
-	#region
+
 	hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
 	vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 	PlayerCollision();
 
-	#endregion
 	//===== Update Sprite Index ======//
-	#region
+
 	var _oldSprite = sprite_index; // note last sprite in a temp var
 
 	// If moving use run sprite
@@ -26,19 +25,18 @@ function PlayerStateFree() // Idle and walk
 	{
 		localFrame = 0
 	}
-	#endregion
+
 	//===== Updating Image Index =====//
-	#region
+
 	PlayerAnimateSprite();
-	#endregion
+
 	//===== Activate Roll State ===== //
-	#region
+
 	if (keyRoll)
 		{
 		state = PlayerStateRoll;
 		moveDistanceRemaining = distanceRoll;
 		}	
-	#endregion
 	
 	//===== Attack Key State ===== //
 	#region
@@ -47,10 +45,10 @@ function PlayerStateFree() // Idle and walk
 		state = PlayerStateAttack;
 		stateAttack = AttackSlash;
 		}	
-	#endregion
+
 	
 	//===== Activate Key Logic ===== //
-	#region
+
 	if (keyActivate)
 	{
 		//1. Check for an entity to activate
@@ -85,23 +83,7 @@ function PlayerStateFree() // Idle and walk
 			
 		}
 		
-		ds_list_destroy(_activateList);
-		
-		/* old interaction text
-		// Point based instance interaction
-		var _activateX = lengthdir_x(15, direction);
-		var _activateY = lengthdir_y(15, direction);
-		activate = instance_position(x+_activateX, y+_activateY, pEntity);
-		//	slight better code but broken
-		// Rectangle infront of player for instance interaction (more forgiving) but breaks throwing
-		var _activateX1 = lengthdir_x(16, direction+45);
-		var _activateY1 = lengthdir_y(16, direction+45);
-		var _activateX2 = lengthdir_x(8, direction-90);
-		var _activateY2 = lengthdir_y(8, direction-90);
-		activate = collision_rectangle(x+_activateX1, y+_activateY1, x+_activateX2,y+_activateY2, pEntity, false, true); 
-		*/
-		
-		
+		ds_list_destroy(_activateList);		
 		
 		//2. If there is nothing, or there is something but it has no script (if we are holding something, throw it) - Return to free state
 		if (activate == noone)
@@ -173,7 +155,7 @@ function PlayerStateFree() // Idle and walk
 		
 	}
 	
-	#endregion
+
 }
 
 function PlayerStateRoll() // Rolling
@@ -306,6 +288,10 @@ function PlayerStateDead() // Handle player death
 		}
 	}
 }
+
+
+
+
 
 
 
