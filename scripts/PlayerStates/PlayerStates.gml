@@ -134,6 +134,7 @@ function PlayerStateFree() // Idle and walk
 		}
 
 	}
+	// Use Items
 	if (keyItem) && (!keyActivate) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
 	{
 		switch (global.playerEquipped)
@@ -147,6 +148,31 @@ function PlayerStateFree() // Idle and walk
 			default: break;
 		}
 	}
+	// Cycle Items
+	if (global.playerHasAnyItems)
+	{
+		var _cycleSelection = keyItemSelectRight - keyItemSelectLeft;
+		if (_cycleSelection != 0)
+		{
+			do
+			{
+				global.playerEquipped += _cycleSelection;
+				if (global.playerEquipped < 1) 
+				{
+					global.playerEquipped = ITEM.TYPE_COUNT - 1;
+				}
+				if (global.playerEquipped >= ITEM.TYPE_COUNT)
+				{
+					global.playerEquipped = 1;
+				}
+			}
+			until (global.playerItemUnlocked[global.playerEquipped]);
+			
+		}
+		
+		
+	}
+	
 	#endregion
 }
 
@@ -280,5 +306,6 @@ function PlayerStateDead() // Handle player death
 		}
 	}
 }
+
 
 

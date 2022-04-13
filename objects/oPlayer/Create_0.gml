@@ -1,3 +1,6 @@
+// gamepad deadzone
+//gamepad_set_axis_deadzone(0,0.7);
+
 // Set player state default
 state = PlayerStateFree;
 lastState = state;
@@ -64,6 +67,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 

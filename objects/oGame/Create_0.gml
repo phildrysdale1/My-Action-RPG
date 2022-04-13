@@ -30,6 +30,9 @@ global.playerAmmo[ITEM.BOW] = 0;
 global.playerItemUnlocked[ITEM.BOMB] = true;
 global.playerHasAnyItems = true;
 global.playerAmmo[ITEM.BOMB] = 5;
+global.playerItemUnlocked[ITEM.BOW] = true;
+global.playerAmmo[ITEM.BOW] = 15;
+global.playerItemUnlocked[ITEM.HOOK] = true;
 
 
 // manage quests
@@ -49,6 +52,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

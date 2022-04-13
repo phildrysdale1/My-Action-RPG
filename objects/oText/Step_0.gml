@@ -22,7 +22,7 @@ if (responseSelected < _min)
 	}
 		
 		
-if (keyboard_check_pressed(ord("E")) || gamepad_button_check_pressed(8, gp_face1))
+if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(8, gp_face1))
 	{
 		var _messageLength = string_length(message)
 		if (textProgress >= _messageLength) // if already fully displayed
