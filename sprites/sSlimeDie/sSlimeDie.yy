@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Entities/Enemies.yy",
+    "name": "Slime",
+    "path": "folders/Sprites/Entities/Enemies/Slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSlimeDie",
