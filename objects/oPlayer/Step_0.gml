@@ -30,11 +30,9 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 // Call the appropriate state function.
 if (!global.gamePaused)
 {
-	script_execute(state);
-	invulnerable = max(invulnerable - 1, 0); // decrease invulnerable by 1 per frame to zero
-	flash = max(flash - 0.05, 0); // decreas flash by 0.05 per frame down to zero
-	
-	
+		script_execute(state);
+		invulnerable = max(invulnerable - 1, 0); // decrease invulnerable by 1 per frame to zero
+		flash = max(flash - 0.05, 0); // decreas flash by 0.05 per frame down to zero	
 }
 
 
@@ -42,6 +40,7 @@ if (!global.gamePaused)
 // Depth Sorting
 
 depth = -bbox_bottom;
+
 
 
 
