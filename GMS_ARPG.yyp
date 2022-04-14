@@ -59,7 +59,7 @@
     {"id":{"name":"sPlayerDie","path":"sprites/sPlayerDie/sPlayerDie.yy",},"order":8,},
     {"id":{"name":"sItemUI","path":"sprites/sItemUI/sItemUI.yy",},"order":4,},
     {"id":{"name":"sPlayerRunCarrying","path":"sprites/sPlayerRunCarrying/sPlayerRunCarrying.yy",},"order":10,},
-    {"id":{"name":"oBoulder","path":"objects/oBoulder/oBoulder.yy",},"order":14,},
+    {"id":{"name":"oBoulder","path":"objects/oBoulder/oBoulder.yy",},"order":1,},
     {"id":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},"order":1,},
     {"id":{"name":"sFragPot","path":"sprites/sFragPot/sFragPot.yy",},"order":5,},
     {"id":{"name":"sHookBlade","path":"sprites/sHookBlade/sHookBlade.yy",},"order":6,},
