@@ -2,23 +2,7 @@
 
 if (!global.gamePaused)
 {
-	//===== Bounce =====//
-	
-	if (bounceCount != 0)
-	{
-		bounce += (pi * bounceSpeed); // monitor how far along the bounce we are (how far along a sin wave - range 0 - pi)
-		if (bounce > pi) // end of bounce
-		{
-		bounce -= pi; // set back to zero (give or take)
-		bounceHeight *= 0.6; // reduce bounce height with each bounce
-		bounceCount--;
-		}
-		z = abs(sin(bounce)) * bounceHeight; // abs sets the sin wave to always positive so it stops any bounce going below the ground.
-	}
-	else 
-	{ 
-		z = 0;	
-	}
+	ItemBounce();
 	
 	//===== Deteriorate =====//
 	
@@ -56,3 +40,4 @@ if (!global.gamePaused)
 	spd = max(spd-fric, 0); // apply friction
 	
 }
+

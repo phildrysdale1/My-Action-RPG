@@ -38,8 +38,10 @@ if (instance_exists(oPlayer))
 	
 }
 
+//===== Bounce =====//
+ItemBounce();
 
-
+ 
 x += lengthdir_x(spd, direction); // moving object according to dropitem()
 y += lengthdir_y(spd, direction);
 spd = max(spd - fric, 0); // reduce speed over time

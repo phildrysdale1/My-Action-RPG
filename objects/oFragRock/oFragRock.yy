@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sFrag_plant",
-    "path": "sprites/sFrag_plant/sFrag_plant.yy",
+    "name": "sFragRock",
+    "path": "sprites/sFragRock/sFragRock.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,14 +26,14 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"bounceCount","path":"objects/pFragment/pFragment.yy",},"objectId":{"name":"pFragment","path":"objects/pFragment/pFragment.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"bounceCount","path":"objects/pFragment/pFragment.yy",},"objectId":{"name":"pFragment","path":"objects/pFragment/pFragment.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "World",
     "path": "folders/Objects/Entities/World.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oFragPlant",
+  "name": "oFragRock",
   "tags": [],
   "resourceType": "GMObject",
 }

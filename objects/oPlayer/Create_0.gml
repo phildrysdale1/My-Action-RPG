@@ -63,9 +63,11 @@ if (global.targetX != -1)
 }
 // insert sprites into variables
 
-if (global.iLifted!=noone) {	// adjust sprites if carrying 
+if (global.iLifted!=noone) // adjust sprites if carrying 
+{	
 	spriteIdle=sPlayerCarrying;
 	spriteRun=sPlayerRunCarrying;
+	sprite_index = spriteIdle;
 }
 else
 {								// regular sprites if not carrying
@@ -77,6 +79,7 @@ spriteIdle = sPlayer;
 
 // contextualize frame number to the sub-animations in the longer animation strips
 localFrame = 0;
+
 
 
 

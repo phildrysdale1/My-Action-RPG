@@ -32,7 +32,7 @@ function PlayerStateFree() // Idle and walk
 
 	//===== Activate Roll State ===== //
 
-	if (keyRoll)
+	if (keyRoll) && (global.iLifted == noone)
 		{
 		state = PlayerStateRoll;
 		moveDistanceRemaining = distanceRoll;
@@ -338,7 +338,6 @@ function PlayerStateHook() // Shooting your hook
 	}
 }
 
-
 function PlayerStateTransition() // Maintain player state through a room transition
 {
 	//  Movement
@@ -408,6 +407,7 @@ function PlayerStateDead() // Handle player death
 		}
 	}
 }
+
 
 
 

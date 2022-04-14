@@ -5,8 +5,13 @@ event_inherited();
 
 entityDropList = choose
 (
-[oCoin,oCoin],
-[oCoin,oCoin,oCoin],
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
 [oBombDrop]
 );
+
 
