@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mVillage.wav",
-  "duration": 124.799271,
+  "soundFile": "sndArrowLoose.wav",
+  "duration": 0.72,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Bow",
+    "path": "folders/Sounds/Weapons/Bow.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mVillage",
+  "name": "sndArrowLoose",
   "tags": [],
   "resourceType": "GMSound",
 }

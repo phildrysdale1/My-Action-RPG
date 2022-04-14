@@ -31,6 +31,7 @@ function UseItemBomb()
 		global.playerAmmo[ITEM.BOMB]--;
 		var _bomb = instance_create_layer(x, y, "Instances", oBomb);
 		ActivateLiftable(_bomb);
+		
 	}
 	
 }
@@ -40,6 +41,7 @@ function UseItemBow()
 	if (global.playerAmmo[ITEM.BOW >0]) && (global.iLifted == noone)
 	{
 		global.playerAmmo[ITEM.BOW]--;
+		audio_play_sound(sndBowDraw,600,false);
 		PlayerActOutAnimation(sPlayerBow, PlayerFireArrow);
 	}
 }
@@ -53,6 +55,7 @@ function PlayerFireArrow()
 		image_speed = 0;
 		image_index = CARDINAL_DIR;
 		speed = 6;
+		audio_play_sound(sndArrowLoose,600,false);
 	}	
 }
 
@@ -82,3 +85,4 @@ function ItemBounce()
 		z = 0;	
 	}
 }
+

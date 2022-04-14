@@ -48,6 +48,14 @@ enum HOOKSTATUS
 }
 
 
+// sword states
+
+enum SWORD
+{
+	MISS,
+	ENEMY,
+	ENTITY
+}
 
 
 

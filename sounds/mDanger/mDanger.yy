@@ -14,8 +14,8 @@
   "soundFile": "mDanger.wav",
   "duration": 86.71429,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mDanger",

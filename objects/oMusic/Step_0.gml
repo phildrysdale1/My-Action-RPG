@@ -39,3 +39,6 @@ if (keyMute) && (alarm[0] != -1)  && (audioPlaying == false)
 	alarm[0] = 300;
 }
 */
+
+
+

@@ -19,7 +19,7 @@ function AttackSlash()
 	}
 	
 	CalcAttack(sPlayerAttackSlashHB);
-
+	
 	// Update Sprite
 	PlayerAnimateSprite();
 	
@@ -36,7 +36,14 @@ function CalcAttack()
 	mask_index = argument0;
 	var hitByAttackNow = ds_list_create();
 	var hits = instance_place_list(x,y, pEntity, hitByAttackNow, false);
-	
+	if (hits <= 0)
+	{
+		// Play swipe if no hit
+		with (oSound)
+		{
+			swordSound = SWORD.MISS;
+		}
+	}
 	if (hits > 0)
 	{
 		for (var i = 0; i < hits; i++)
@@ -53,10 +60,12 @@ function CalcAttack()
 				{
 					if (object_is_ancestor(object_index, pEnemy))
 					{
+						with (oSound){swordSound = SWORD.ENEMY;}
 						HurtEnemy(id, 5, other.id, 10); // 5 = damage 10 = knockback 
 					}
 					else
 					{
+						with (oSound){swordSound = SWORD.ENTITY;}
 						if(entityHitScript != -1)
 						{
 							script_execute(entityHitScript);
@@ -104,3 +113,4 @@ function HurtEnemy(_enemy, _damage, _source, _knockback)
 		}
 	}
 }
+

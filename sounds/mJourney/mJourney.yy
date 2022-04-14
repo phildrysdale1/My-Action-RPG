@@ -14,8 +14,8 @@
   "soundFile": "mJourney.wav",
   "duration": 49.25794,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mJourney",

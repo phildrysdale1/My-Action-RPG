@@ -1,0 +1,1 @@
+swordSound = -1;

@@ -18,12 +18,18 @@ if (!global.gamePaused)
 				{
 					if (object_is_ancestor(object_index, pEnemy))
 					{
+						
 						HurtEnemy(id, 25, other.id, 20);
 					}
 					else
 					{
 						if (entityHitScript != -1)
 						{
+							if (entityExplodeBig == true)
+							{
+								audio_stop_sound(sndExplosionSmall);
+								audio_play_sound(sndExplosionBig,900,false);
+							}
 							script_execute(entityHitScript);
 						}
 					}
@@ -40,3 +46,5 @@ else
 {
 	image_speed = 0;	
 }
+
+
