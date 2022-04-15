@@ -20,20 +20,11 @@ global.playerMoney = 0;
 
 // global player items
 global.playerHasAnyItems = false;
-global.playerEquipped = ITEM.BOMB;
+global.playerEquipped = ITEM.NONE;
 global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1); // stops showing if there aren't any (-1 rather than 0 - wouldn't want it to show 0 hookshot)
 global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
 global.playerAmmo[ITEM.BOMB] = 0;
 global.playerAmmo[ITEM.BOW] = 0;
-
-// TEMP FOR TESTING
-global.playerItemUnlocked[ITEM.BOMB] = true;
-global.playerItemUnlocked[ITEM.BOW] = true;
-global.playerItemUnlocked[ITEM.HOOK] = true;
-global.playerHasAnyItems = true;
-global.playerAmmo[ITEM.BOMB] = 5;
-global.playerAmmo[ITEM.BOW] = 15;
-
 
 
 // manage quests
@@ -54,6 +45,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

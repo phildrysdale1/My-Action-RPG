@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sExplode",
-    "path": "sprites/sExplode/sExplode.yy",
+    "name": "sRoof",
+    "path": "sprites/sRoof/sRoof.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,16 +23,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Objects/Entities/Weapons.yy",
+    "name": "Buildings",
+    "path": "folders/Objects/Entities/World/Buildings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oExplode",
+  "name": "oRoof",
   "tags": [],
   "resourceType": "GMObject",
 }

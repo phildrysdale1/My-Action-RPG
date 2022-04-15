@@ -20,6 +20,7 @@ function DialogueResponses(response)
 		
 		case 5: NewTextBox("I've never been quite so disappointed.",2); break;
 		
+		case 6: PurchaseItem(activate.item, activate.itemAmount, activate.itemCost); break;
 		
 		default: break;
 	
@@ -27,4 +28,5 @@ function DialogueResponses(response)
 
 
 }
+
 

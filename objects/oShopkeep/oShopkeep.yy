@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sQuestie",
-    "path": "sprites/sQuestie/sQuestie.yy",
+    "name": "sShopKeep",
+    "path": "sprites/sShopKeep/sShopKeep.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,7 +36,7 @@
     "path": "folders/Objects/Entities/NPCs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oQuestNPC",
+  "name": "oShopkeep",
   "tags": [],
   "resourceType": "GMObject",
 }

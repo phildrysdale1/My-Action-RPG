@@ -342,7 +342,8 @@ function PlayerStateTransition() // Maintain player state through a room transit
 {
 	//  Movement
 	PlayerCollision();
-	
+	hSpeed = 0;
+	vSpeed = 0;
 	// Update Image Index
 	PlayerAnimateSprite();
 	
@@ -407,6 +408,7 @@ function PlayerStateDead() // Handle player death
 		}
 	}
 }
+
 
 
 

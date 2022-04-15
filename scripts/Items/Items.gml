@@ -35,7 +35,6 @@ function UseItemBomb()
 	}
 	
 }
-
 function UseItemBow()
 {
 	if (global.playerAmmo[ITEM.BOW >0]) && (global.iLifted == noone)
@@ -45,7 +44,6 @@ function UseItemBow()
 		PlayerActOutAnimation(sPlayerBow, PlayerFireArrow);
 	}
 }
-
 function PlayerFireArrow()
 {
 	with (instance_create_depth(floor(x), floor(y)-7, depth, oArrow))
@@ -58,7 +56,6 @@ function PlayerFireArrow()
 		audio_play_sound(sndArrowLoose,600,false);
 	}	
 }
-
 function UseItemHook()
 {
 	state = PlayerStateHook;
@@ -86,3 +83,32 @@ function ItemBounce()
 	}
 }
 
+function PurchaseItem(_item, _amount, _cost)
+{
+	if (global.playerMoney >= _cost)
+	{
+		global.playerHasAnyItems = true;
+		global.playerMoney -= _cost;
+		global.playerItemUnlocked[_item] = true;
+		global.playerAmmo[_item] += _amount;
+		global.playerEquipped = _item;
+		//if (activate.notrepeatable) setup script at some point so people can buy more arrows etc.
+		//{
+			instance_destroy(activate);
+		//}
+		var _desc = "";
+		
+		switch (_item)
+		{
+			case ITEM.BOMB: _desc = "The Bow!\nFire with the activate key to damage enemies, \nyou can find ammo in the world." break;
+			case ITEM.BOW: _desc = "The Bomb!\nLight the fuse with the activate key and press it again to hurl it at whatever you want to blow up, \nYou might find more bombs in the world."  break;
+			case ITEM.HOOK:  _desc = "The Grappling Hook!\n NaNa NaNa NaNa NaNa Batman!" break;
+			default: _desc = "No item description found"; break;			
+		}
+		NewTextBox(_desc, 1);
+}
+	else 
+	{
+		NewTextBox("Sorry your broke ass can't afford this.",1)
+	}
+}
