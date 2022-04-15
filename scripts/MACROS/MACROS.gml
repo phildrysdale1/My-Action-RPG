@@ -54,7 +54,16 @@ enum SWORD
 {
 	MISS,
 	ENEMY,
-	ENTITY
+	ENTITY,
+	SOLID,
+	CERAMIC
+}
+
+enum HITNOISE
+{
+	NONE,
+	SOLID,
+	CERAMIC
 }
 
 

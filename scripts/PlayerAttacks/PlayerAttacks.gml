@@ -38,11 +38,13 @@ function CalcAttack()
 	var hits = instance_place_list(x,y, pEntity, hitByAttackNow, false);
 	if (hits <= 0)
 	{
+		
 		// Play swipe if no hit
 		with (oSound)
 		{
 			swordSound = SWORD.MISS;
 		}
+		
 	}
 	if (hits > 0)
 	{
@@ -60,12 +62,51 @@ function CalcAttack()
 				{
 					if (object_is_ancestor(object_index, pEnemy))
 					{
-						with (oSound){swordSound = SWORD.ENEMY;}
+						
+						with (oSound)
+						{
+							swordPause = false;
+							swordSound = SWORD.ENEMY;
+						}
+						
 						HurtEnemy(id, 5, other.id, 10); // 5 = damage 10 = knockback 
 					}
 					else
 					{
-						with (oSound){swordSound = SWORD.ENTITY;}
+
+						switch (entityHitNoise)
+						{
+							case HITNOISE.NONE:
+							{
+								show_debug_message("no noise");
+								with (oSound)
+									{
+									swordSound = SWORD.MISS;
+									}
+								break;
+							}
+							case HITNOISE.SOLID:
+							{
+								show_debug_message("solid noise");
+								with (oSound)
+									{
+									swordPause = false;
+									swordSound = SWORD.SOLID;
+									}
+								break;
+							}
+							case HITNOISE.CERAMIC:
+							{
+								show_debug_message("ceramic noise");
+								with (oSound)
+								{
+									swordPause = false;
+									swordSound = SWORD.CERAMIC;
+								}
+								break;
+							}
+						}
+						
 						if(entityHitScript != -1)
 						{
 							script_execute(entityHitScript);
@@ -113,4 +154,8 @@ function HurtEnemy(_enemy, _damage, _source, _knockback)
 		}
 	}
 }
+
+
+
+
 
