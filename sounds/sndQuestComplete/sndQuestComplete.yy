@@ -14,8 +14,8 @@
   "soundFile": "sndQuestComplete.wav",
   "duration": 4.1875,
   "parent": {
-    "name": "GMS_ARPG",
-    "path": "GMS_ARPG.yyp",
+    "name": "World",
+    "path": "folders/Sounds/World.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndQuestComplete",

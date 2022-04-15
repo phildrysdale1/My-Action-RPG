@@ -56,15 +56,22 @@ enum SWORD
 	ENEMY,
 	ENTITY,
 	SOLID,
-	CERAMIC
 }
 
 enum HITNOISE
 {
 	NONE,
-	SOLID,
+	SOLID
+}
+
+enum DESTROYNOISE
+{
+	NONE,
+	ROCK,
+	BOULDER,
 	CERAMIC
 }
+
 
 
 

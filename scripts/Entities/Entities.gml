@@ -31,4 +31,37 @@ function ActivateLiftable(_id)
 	
 }
 
+function EntityDestroyNoise(entityDestoryNoise)
+{
+	switch (entityDestroyNoise)
+	{
+		case DESTROYNOISE.NONE:
+		{ // do nothing
+			show_debug_message("no break noise")
+			break;
+		}
+		case DESTROYNOISE.ROCK:
+		{
+			show_debug_message("rock break noise")
+			audio_play_sound(sndRockFrag, 600, false);
+			break;
+		}
+		case DESTROYNOISE.BOULDER:
+		{
+			show_debug_message("boulder break noise")
+			audio_play_sound(sndBoulderFrag, 600, false);
+			break;
+		}
+		case DESTROYNOISE.CERAMIC:
+		{
+			show_debug_message("glass break noise")
+			audio_play_sound(sndGlassBreak, 600, false);
+			break;
+		}
+	}
+	
+}
+
+
+
 

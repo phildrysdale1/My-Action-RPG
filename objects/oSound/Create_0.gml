@@ -1,2 +1,3 @@
-swordPause = false;
-swordSound = -1;
+impactPause = false;
+impactSound = -1;
+

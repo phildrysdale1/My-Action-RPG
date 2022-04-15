@@ -42,7 +42,7 @@ function CalcAttack()
 		// Play swipe if no hit
 		with (oSound)
 		{
-			swordSound = SWORD.MISS;
+			impactSound = SWORD.MISS;
 		}
 		
 	}
@@ -65,8 +65,8 @@ function CalcAttack()
 						
 						with (oSound)
 						{
-							swordPause = false;
-							swordSound = SWORD.ENEMY;
+							impactPause = false;
+							impactSound = SWORD.ENEMY;
 						}
 						
 						HurtEnemy(id, 5, other.id, 10); // 5 = damage 10 = knockback 
@@ -81,7 +81,7 @@ function CalcAttack()
 								show_debug_message("no noise");
 								with (oSound)
 									{
-									swordSound = SWORD.MISS;
+									impactSound = SWORD.MISS;
 									}
 								break;
 							}
@@ -90,19 +90,9 @@ function CalcAttack()
 								show_debug_message("solid noise");
 								with (oSound)
 									{
-									swordPause = false;
-									swordSound = SWORD.SOLID;
+									impactPause = false;
+									impactSound = SWORD.SOLID;
 									}
-								break;
-							}
-							case HITNOISE.CERAMIC:
-							{
-								show_debug_message("ceramic noise");
-								with (oSound)
-								{
-									swordPause = false;
-									swordSound = SWORD.CERAMIC;
-								}
 								break;
 							}
 						}
@@ -154,6 +144,9 @@ function HurtEnemy(_enemy, _damage, _source, _knockback)
 		}
 	}
 }
+
+
+
 
 
 
