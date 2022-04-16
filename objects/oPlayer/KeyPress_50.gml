@@ -1,0 +1,3 @@
+/// @desc 
+
+LoadGame(global.gameSaveSlot);

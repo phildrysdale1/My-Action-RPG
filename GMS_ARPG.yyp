@@ -115,6 +115,7 @@
     {"id":{"name":"sndItemPickup","path":"sounds/sndItemPickup/sndItemPickup.yy",},"order":2,},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},"order":0,},
     {"id":{"name":"sndBowDraw","path":"sounds/sndBowDraw/sndBowDraw.yy",},"order":0,},
+    {"id":{"name":"SaveGame","path":"scripts/SaveGame/SaveGame.yy",},"order":32,},
     {"id":{"name":"oBombDrop","path":"objects/oBombDrop/oBombDrop.yy",},"order":1,},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},"order":1,},
     {"id":{"name":"sndSword2","path":"sounds/sndSword2/sndSword2.yy",},"order":1,},
