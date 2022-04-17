@@ -1,3 +1,0 @@
-/// @desc 
-
-LoadGame(global.gameSaveSlot);

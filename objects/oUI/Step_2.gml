@@ -1,3 +1,12 @@
+if (room == rTitle)
+{
+	visible = false;
+}
+else
+{
+	visible = true;	
+}
+
 if (global.gamePaused)
 {
 	keyUp = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check(8, gp_padu);
@@ -54,3 +63,7 @@ if (global.gamePaused)
 		}
 	}
 }
+
+
+
+
