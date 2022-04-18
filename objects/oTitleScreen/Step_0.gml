@@ -37,6 +37,13 @@ if (keyboard_check(vk_enter)) || keyboard_check(vk_space) && (keyPressed) && (!l
 	loadingStarted = true;
 }
 
+// Delete Save File
+if (keyboard_check_pressed(vk_backspace)){
+	slotData[slotSelected] = -1;
+	if (file_exists("save" + string(slotSelected) + ".sav")){
+		file_delete("save" + string(slotSelected) + ".sav");
+	}
+}
 
 
 
@@ -49,3 +56,4 @@ if (keyboard_check_pressed(vk_anykey))
 // Animate Player Icon
 image_speed = sprIndex;
 sprIndex += 0.27;
+

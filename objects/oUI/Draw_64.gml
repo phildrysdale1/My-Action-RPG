@@ -66,6 +66,13 @@ if (global.playerHasAnyItems)
 	
 }
 
+//===== Draw Goodness =====//
+_xx = RESOLUTION_W - 16;
+_yy = 16;
+
+	DrawSetText(c_white, fText, fa_right, fa_bottom);
+	draw_text(_xx, _yy, global.playerGoodness);
+
 //===== Draw Pause Menu =====//
 
 if (global.gamePaused)
@@ -93,4 +100,5 @@ if (global.gamePaused)
 		draw_set_alpha(1.0);		
 	}
 }
+
 

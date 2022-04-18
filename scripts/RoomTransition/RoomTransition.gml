@@ -26,6 +26,11 @@ function RoomToAreaName (_room)
 		case rCave: return "The Cave"; break;
 		case rCave2: return "The Cave"; break;
 		case rShop: return "The Shop"; break;
+		case rAndysHouse: return "Andy\'s House"; break;
+		case rAndysBasement: return "Andy\'s Basement"; break;
 		default: return "Unknown Area"; break;
 	}
 }
+
+
+

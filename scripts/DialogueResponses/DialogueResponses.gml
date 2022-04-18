@@ -75,6 +75,7 @@ function DialogueResponses(response)
 			{
 				global.playerGoodness += 1; 
 			}
+			global.questStatus[? "TimmyQuest"] = 1; // found out about Timmy
 			NewTextBox("Well my husband, Andy, just up and left me, and took my little girl too...",2,["15: Bummer", "16: I'm sorry, that must be difficult.", "17: Pfft, fuck men am I right? *attempt high-five*"]); 
 			break;
 		}
@@ -113,17 +114,17 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		//========= Quest Started ========//
+		//========= "Kimmy" Quest Started ========//
 		case 19: 
 		{
 			if (global.playerDialogue == 20)
 			{
-				global.questStatus[? "TimmyQuest"] = 2; // quest with sword as reward
+				global.questStatus[? "TimmyQuest"] = 2.2; // quest with sword as reward
 			}
 			else
 			{
 				global.playerGoodness += 1; 
-				global.questStatus[? "TimmyQuest"] = 1; // quest with money as a reward
+				global.questStatus[? "TimmyQuest"] = 2.1; // quest with money as a reward
 			}
 			NewTextBox("Thank you, thank you, thank you. I don't know where he's gone... I don't think he's still in town.",2,
 				["0: I'm on it! I will return with little Kimmy."]); 
@@ -148,10 +149,25 @@ function DialogueResponses(response)
 		}
 		default: break;
 		
+		//========= Andy Dialogue
+		
+		
+		
 	}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
