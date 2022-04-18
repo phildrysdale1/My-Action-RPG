@@ -1,7 +1,68 @@
 //===== Handle Player Collision and Movement =====//
 function PlayerCollision()
 {
+	// ===== NEW OBJECT BASED COLISION ===== //
+	
 	var _collision = false;
+	
+	
+	// Horizontal Check
+	if (hSpeed != 0)
+	{
+		if (place_meeting(x+hSpeed, y, oCollision))
+		{
+			repeat (abs(hSpeed))
+			{
+			if (!place_meeting(x+sign(hSpeed), y, oCollision))
+			{
+				x += sign(hSpeed);
+			}
+			else
+			{
+				break;
+			}
+			
+			}
+			hSpeed = 0;
+			_collision = true;
+		}
+	}
+	
+	// Vertical Check
+	if (vSpeed != 0)
+	{
+		if (place_meeting(x, y+vSpeed, oCollision))
+		{
+			repeat (abs(vSpeed))
+			{
+			if (!place_meeting(x, y+sign(vSpeed), oCollision))
+			{
+				y += sign(vSpeed);
+			}
+			else
+			{
+				break;
+			}
+			
+			}
+			vSpeed = 0;
+			_collision = true;
+		}	
+	}
+	
+	// Apply movement
+	show_debug_message(_collision)
+	
+	x += hSpeed;
+	y += vSpeed;
+	
+return _collision;
+	
+	// ====== OLD TILEMAP COLISION ====== //
+	/* 
+	var _collision = false;
+	
+	
 	// list to store every colidable entity
 	var _entityList = ds_list_create();
 	
@@ -102,6 +163,9 @@ function PlayerCollision()
 	ds_list_destroy(_entityList);
 	
 	return _collision;
+	*/
+	
 }
+
 
 

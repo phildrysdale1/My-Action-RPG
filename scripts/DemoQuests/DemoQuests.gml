@@ -98,7 +98,7 @@ function ActivateKaren()
 			
 		} break;
 		
-		case 2.1.1: // have found out about Timmy
+		case 2.11: // have found out about Timmy
 		{
 			NewTextBox("Hey did you find Timmy yet?", 2,
 			["0: No, not yet (lie)", 
@@ -153,6 +153,8 @@ function ActivateAndy()
 		default: show_debug_message("its fucked");break;
 	}
 }
+
+
 
 
 

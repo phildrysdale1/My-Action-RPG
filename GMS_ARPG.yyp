@@ -171,6 +171,7 @@
     {"id":{"name":"oFragPot","path":"objects/oFragPot/oFragPot.yy",},"order":1,},
     {"id":{"name":"sPlayerLift","path":"sprites/sPlayerLift/sPlayerLift.yy",},"order":6,},
     {"id":{"name":"sRoof","path":"sprites/sRoof/sRoof.yy",},"order":2,},
+    {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},"order":3,},
     {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},"order":0,},
   ],
   "Options": [
