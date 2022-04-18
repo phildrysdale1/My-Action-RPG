@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Quests.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TutorialQuests",
+  "name": "DemoQuests",
   "tags": [],
   "resourceType": "GMScript",
 }

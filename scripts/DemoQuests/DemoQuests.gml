@@ -56,6 +56,38 @@ function ActivateHatCat()
 	}
 }
 			
+
+function ActivateKaren()
+{
+	switch (global.questStatus[? "TimmyQuest"])
+	{
+
+		case 0: // intial hello
+		{
+				show_debug_message("it is 0");
+				//this section is not setup
+				NewTextBox("Hello there, how are you?",2 
+				["10: Fine, and you", 
+				"11: None of your damn business", 
+				"12: What gossip have you heard recently?", 
+				"13: Is there any work to be had in this town?"]);
+		} break;
+		
+		case 1: // quest in progress
+		{
 			
+		} break;
+		
+		case 2: //quest already completed
+		{
+				//thanks again
+			
+		} break;
+		
+		default: show_debug_message("its fucked");break;
+	}
+}
+
+
 
 

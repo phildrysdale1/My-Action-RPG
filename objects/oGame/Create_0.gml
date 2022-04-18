@@ -29,11 +29,15 @@ global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
 global.playerAmmo[ITEM.BOMB] = 0;
 global.playerAmmo[ITEM.BOW] = 0;
 
+// global player goodness
+global.playerGoodness = 0; // moves - for evil + for good
+
 
 // manage quests
 global.questStatus = ds_map_create(); // Allows for readable quest names rather than just numbers
 global.questStatus[? "TheHatQuest"] = 0;
 global.boulderDestroyed = 0;
+global.questStatus[? "TimmyQuest"] = 0;
 
 // global variable for if the player is carrying something
 global.iLifted = noone;
@@ -48,6 +52,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 
