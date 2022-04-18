@@ -31,7 +31,8 @@ global.playerAmmo[ITEM.BOW] = 0;
 
 // global player goodness
 global.playerGoodness = 0; // moves - for evil + for good
-
+// dialogue trackers
+global.playerDialogue = 0; // set to certain numbers for tracking goodness in more complex conversations.
 
 // manage quests
 global.questStatus = ds_map_create(); // Allows for readable quest names rather than just numbers
@@ -52,6 +53,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

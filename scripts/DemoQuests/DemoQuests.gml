@@ -61,24 +61,26 @@ function ActivateKaren()
 {
 	switch (global.questStatus[? "TimmyQuest"])
 	{
-
+		
 		case 0: // intial hello
 		{
-				show_debug_message("it is 0");
-				//this section is not setup
-				NewTextBox("Hello there, how are you?",2 
-				["10: Fine, and you", 
-				"11: None of your damn business", 
-				"12: What gossip have you heard recently?", 
-				"13: Is there any work to be had in this town?"]);
+			//this section is not setup
+			NewTextBox("Hello there, I'm Karen, how are you?", 2,
+			["10: Fine, and you", 
+			"11: None of your damn business", 
+			"12: What the gossip about town?"]);
 		} break;
 		
-		case 1: // quest in progress
+		case 1: // quest in progress - reward money 100g
 		{
+			NewTextBox("Hello there, I'm Karen, how are you?", 2,
+			["10: Fine, and you", 
+			"11: None of your damn business", 
+			"12: What the gossip about town?"]);
 			
 		} break;
 		
-		case 2: //quest already completed
+		case 2: //quest in progress - reward sword 1.5x damage
 		{
 				//thanks again
 			

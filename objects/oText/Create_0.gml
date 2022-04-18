@@ -13,3 +13,4 @@ textProgress = 0; // Represents number of character in the text box
 
 // reset text reponse selected
 responseSelected = 0;
+
