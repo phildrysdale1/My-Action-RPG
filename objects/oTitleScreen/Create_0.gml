@@ -5,6 +5,7 @@ slotSelected = 0;
 loadingStarted = false;
 sprIndex = 0;
 SaveGame();
+global.deleteSavePrompt = false;
 
 for (var _slot = 0; _slot <= 2; _slot++)
 {
@@ -18,4 +19,5 @@ for (var _slot = 0; _slot <= 2; _slot++)
 		slotData[_slot] = -1;	
 	}
 }
+
 

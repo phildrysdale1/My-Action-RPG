@@ -66,7 +66,6 @@ function PlayerCollision()
 	}
 	
 	// Apply movement
-	show_debug_message(_collision)
 	
 	x += hSpeed;
 	y += vSpeed;
@@ -74,6 +73,7 @@ function PlayerCollision()
 return _collision;
 	
 }
+
 
 
 

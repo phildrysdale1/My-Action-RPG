@@ -3,9 +3,21 @@ function DialogueResponses(response)
 {
 	switch(argument0)
 	{
-		case 0: break; // generic response to end conversations.
+		case 0: global.deleteSavePrompt = false; break; // generic response to end conversations.
 		
-		case 1: NewTextBox("", 1); break;// unused
+		case 1: 
+		{
+			with(oTitleScreen)
+			{
+				slotData[slotSelected] = -1;
+				if (file_exists("save" + string(slotSelected) + ".sav"))
+				{
+				file_delete("save" + string(slotSelected) + ".sav");
+				}
+				slotsVisible = max(0, slotsVisible + 0.01);
+				global.deleteSavePrompt = false;
+			}
+		}
 		
 		case 2: NewTextBox("",1); break;// unused
 		
@@ -157,6 +169,8 @@ function DialogueResponses(response)
 
 
 }
+
+
 
 
 

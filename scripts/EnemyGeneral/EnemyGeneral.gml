@@ -91,7 +91,6 @@ return _collision;
 	}
 	
 	// Apply movement
-	show_debug_message(_collision)
 	
 	x += hSpeed;
 	y += vSpeed;
@@ -110,6 +109,7 @@ function EnemyWait()
 		state = stateTarget;	
 	}
 }
+
 
 
 

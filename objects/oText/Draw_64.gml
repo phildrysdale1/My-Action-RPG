@@ -6,7 +6,6 @@ y1 = RESOLUTION_H - (string_height_ext(message,17,RESOLUTION_W-20)+((array_lengt
 
 // Call textbox stretch function
 NineSliceBoxStretched(sTextBoxBg, x1, y1, x2, y2, background);
-//show_debug_message(string_height_ext(message, 14, RESOLUTION_W-20)+(array_length(responses)*3))
 
 
 //set message (text, first character, number of characters to copy)
@@ -33,6 +32,7 @@ if (responses[0] != -1) && (textProgress >= string_length(message))
 draw_text_ext((x1+x2) * 0.5, y1 + 8, _print,15,(RESOLUTION_W-20));
 draw_set_color(c_white);
 draw_text_ext((x1+x2) * 0.5, y1 + 7, _print,15,(RESOLUTION_W-20));
+
 
 
 

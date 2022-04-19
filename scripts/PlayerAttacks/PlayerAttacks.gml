@@ -78,7 +78,6 @@ function CalcAttack()
 						{
 							case HITNOISE.NONE:
 							{
-								show_debug_message("no noise");
 								with (oSound)
 									{
 									impactSound = SWORD.MISS;
@@ -87,7 +86,6 @@ function CalcAttack()
 							}
 							case HITNOISE.SOLID:
 							{
-								show_debug_message("solid noise");
 								with (oSound)
 									{
 									impactPause = false;
@@ -144,6 +142,7 @@ function HurtEnemy(_enemy, _damage, _source, _knockback)
 		}
 	}
 }
+
 
 
 
