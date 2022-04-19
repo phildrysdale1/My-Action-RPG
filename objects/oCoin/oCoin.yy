@@ -31,8 +31,8 @@
     {"propertyId":{"name":"collectScriptArg","path":"objects/pCollectible/pCollectible.yy",},"objectId":{"name":"pCollectible","path":"objects/pCollectible/pCollectible.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Entities/World/Items.yy",
+    "name": "Quest Items",
+    "path": "folders/Objects/Entities/World/Items/Quest Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCoin",

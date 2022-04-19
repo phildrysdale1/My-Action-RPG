@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sCol",
-    "path": "sprites/sCol/sCol.yy",
-  },
+  "spriteId": null,
   "tileWidth": 16,
   "tileHeight": 16,
   "tilexoff": 0,

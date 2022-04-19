@@ -20,6 +20,7 @@ keyItemSelectRight = keyboard_check_pressed(ord("E")) || gamepad_button_check_pr
 keyItemSelectLeft = keyboard_check_pressed(ord("Q")) || gamepad_button_check_pressed(8, gp_shoulderr);
 
 #endregion
+
 //===== Determine player direction from key inputs ===== //
 #region
 inputDirection = point_direction(0,0,keyRight - keyLeft,keyDown - keyUp);
@@ -40,6 +41,7 @@ if (!global.gamePaused)
 // Depth Sorting
 
 depth = -bbox_bottom;
+
 
 
 

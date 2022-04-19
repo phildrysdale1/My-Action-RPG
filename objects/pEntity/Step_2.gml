@@ -11,6 +11,9 @@ if (!global.gamePaused)
 	// manage lifted properties
 	if (lifted) && (instance_exists(oPlayer))
 	{
+
+		entityCollision = false;	
+
 		if (oPlayer.sprite_index != sPlayerLift)
 		{
 			x = oPlayer.x;
@@ -29,11 +32,14 @@ if (!global.gamePaused)
 			x = xstart + lengthdir_x(throwDistanceTravelled, direction);
 			y = ystart + lengthdir_y(throwDistanceTravelled, direction);
 			
-			if (tilemap_get_at_pixel(collisionMap, x, y) > 0)
+			_inst = instance_place(x, y, oCollision)
+			if (_inst != noone)
 			{
 				thrown = false;
 				grav = 0.1;
 			}
+		
+			
 			
 			throwPercent = throwStartPercent + lerp(0, 1 - throwStartPercent, throwDistanceTravelled / throwDistance);
 			z = throwPeakHeight * sin(throwPercent * pi);
@@ -68,12 +74,10 @@ if (!global.gamePaused)
 	}
 }
 
+
 // Decay flash from being hit
 
 flash = max(flash-0.04, 0);
 
 
-
-
-// 
 

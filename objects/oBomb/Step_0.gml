@@ -4,6 +4,7 @@ event_inherited();
 
 if (!global.gamePaused)
 {
+
 	bombTick--; // increment bomb bit by bit
 	if (bombTick == 0)
 	{
@@ -23,4 +24,5 @@ if (!global.gamePaused)
 	}
 		
 }
+
 

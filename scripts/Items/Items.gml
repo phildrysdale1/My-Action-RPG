@@ -29,6 +29,7 @@ function UseItemBomb()
 	if (global.playerAmmo[ITEM.BOMB > 0]) && (global.iLifted == noone)
 	{
 		global.playerAmmo[ITEM.BOMB]--;
+
 		var _bomb = instance_create_layer(x, y, "Instances", oBomb);
 		ActivateLiftable(_bomb);
 		
@@ -112,3 +113,8 @@ function PurchaseItem(_item, _amount, _cost)
 		NewTextBox("Sorry your broke ass can't afford this.",1)
 	}
 }
+
+
+
+
+

@@ -29,10 +29,11 @@ if (!global.gamePaused)
 	
 	x += lengthdir_x(spd, direction);
 	y += lengthdir_y(spd, direction);
-	
+
+
 	//===== Check for collision =====//
-	
-	if (tilemap_get_at_pixel(collisionMap, x, y) > 0)
+	_inst = instance_place(x, y, oCollision)
+	if (_inst != noone)
 	{
 		spd = 0;	
 	}
@@ -40,4 +41,5 @@ if (!global.gamePaused)
 	spd = max(spd-fric, 0); // apply friction
 	
 }
+
 
