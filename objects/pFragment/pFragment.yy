@@ -31,8 +31,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/Entities/World.yy",
+    "name": "Fragments",
+    "path": "folders/Objects/Entities/World/Fragments.yy",
   },
   "resourceVersion": "1.0",
   "name": "pFragment",

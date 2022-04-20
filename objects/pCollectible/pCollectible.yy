@@ -36,8 +36,8 @@
     {"propertyId":{"name":"entityCollision","path":"objects/oCollision/oCollision.yy",},"objectId":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/Entities/World.yy",
+    "name": "Items",
+    "path": "folders/Objects/Entities/World/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "pCollectible",

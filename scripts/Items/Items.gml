@@ -1,6 +1,6 @@
 /// Manage Items
 
-//===== Managing Itme Drops =====//
+//===== Managing Item Drops =====//
 function DropItems(x, y, _items)
 {
 	var _itemsLen = array_length(_items);
@@ -113,6 +113,7 @@ function PurchaseItem(_item, _amount, _cost)
 		NewTextBox("Sorry your broke ass can't afford this.",1)
 	}
 }
+
 
 
 
