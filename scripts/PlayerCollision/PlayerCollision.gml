@@ -47,7 +47,7 @@ function PlayerCollision()
 		if (_entityCheck.entityCollision == true) // check instance to see if its collidable
 		{
 			// move as close as we can to it
-			if (sign(vSpeed) == -1) // if move left
+			if (sign(vSpeed) == -1) // if move down
 			{
 				_snapY = _entityCheck.bbox_bottom + 1; // stop one pixel to the bottom of the entity
 			}
@@ -73,6 +73,7 @@ function PlayerCollision()
 return _collision;
 	
 }
+
 
 
 

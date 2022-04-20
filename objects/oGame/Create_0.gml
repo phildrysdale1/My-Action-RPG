@@ -37,7 +37,7 @@ global.playerDialogue = 0; // set to certain numbers for tracking goodness in mo
 
 // manage quests
 global.questStatus = ds_map_create(); // Allows for readable quest names rather than just numbers
-global.questStatus[? "TheHatQuest"] = 0;
+global.questStatus[? "TheHatQuest"] = 0; //0 - not started, 1 - doing for free, 2 - doing for gold, 3 - done, 4 - rejected
 global.boulderDestroyed = 0;
 global.questStatus[? "TimmyQuest"] = 0;
 
@@ -54,6 +54,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

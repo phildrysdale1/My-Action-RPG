@@ -26,8 +26,7 @@ function DialogueResponses(response)
 		case 4: 
 		{
 				NewTextBox("Thanks!",2);
-				NewTextBox("I think I left it in the scary cave to the north-east.",2);
-				global.questStatus[? "TheHatQuest"] = 1;
+				
 		} break;
 		
 		case 5: NewTextBox("I've never been quite so disappointed.",2); break;
@@ -159,6 +158,211 @@ function DialogueResponses(response)
 				["19: I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!", "11: Well, good luck getting your kid back with no magical sword."]); 
 			break;
 		}
+		// ====== Returning to questie after not being interested ===== //
+		
+		
+		//===== If we meet questie and already have his hat =====//
+		case 50: 
+		{
+			
+			NewTextBox("That's my hat, I lost it while exploring the caves! Can I have it back?",2, 
+			["52: Finders keepers.", 
+			"53: What's in it for me? Is there a finders reward?", 
+			"54: Sure here you go."]);
+			
+			break;
+		}
+		case 51: 
+		{
+			global.playerGoodness = -1;
+			NewTextBox("You lying bastard, I lost that hat while exploring the caves! Give it back to me!",2, 
+			["52: Nah, this is definitely my hat.", 
+			"53: Tell you what, you can have it back for a price.", 
+			"54: Ah I was just messing with you, here you go."]);
+			
+			break;
+		}
+		case 52: 
+		{
+			global.playerGoodness = -1;
+			NewTextBox("Oh come on, surely you don't care about a crappy old hat. It has sentimental value to me! My grandfather gave me that cap on his deathbed.",2, 
+			["55: What a crappy inheritance, no wonder the young can't afford to buy houses these days.", 
+			"53: Tell you what, you can have it back for a price.", 
+			"54: Ah I was just messing with you, here you go."]);
+			
+			break;
+		}
+		
+		case 53: 
+		{
+			NewTextBox("Typical, god-damn hustle economy. Nobody ever out to do the nice thing, all I've got is 25g.",2, 
+			["56: 25g will do just nicely thank you very much.", 
+			"57: I think I'll just keep it then. Thanks.", 
+			"58: Tell you what, why don't I give you it for just 10g."]);
+			
+			break;
+		}   
+		case 54: 
+		{
+			global.playerGoodness = +1;
+			NewTextBox("Thank you so much kind sir!",2);
+			global.questStatus[? "TheHatQuest"] = 3
+			with (oQuestNPC) sprite_index = sQuestieHat;
+			with (oHat) instance_destroy();
+			PlayerDropItem();
+			break;
+		}
+		
+		case 55: 
+		{
+			NewTextBox("Don't be so tough on the guy, he worked his whole life providing for his family, please let me have this keepsake of his back.",2, 
+			["53: Tell you what, you can have it back for a price.", 
+			"54: Sure, you obviously need it more than me. Here you go mate."]);
+			
+			break;
+		}
+		
+		case 56: 
+		{
+			global.playerMoney += 25;
+			global.questStatus[? "TheHatQuest"] = 3
+			with (oQuestNPC) sprite_index = sQuestieHat;
+			with (oHat) instance_destroy();
+			PlayerDropItem();
+			break;
+		}
+		case 57: 
+		{
+			NewTextBox("Please sir, think of my dead grandpa!",2,
+			["56: Fine give me the 25g", 
+			"0: Grandpa's dead and I need to keep my head dry."]);	
+			
+			break;
+		}
+		case 58: 
+		{
+			global.playerMoney += 10;
+			global.questStatus[? "TheHatQuest"] = 3
+			with (oQuestNPC) sprite_index = sQuestieHat;
+			with (oHat) instance_destroy();
+			PlayerDropItem();
+			break;
+		}
+		
+		// ===== Questie meeting don't have the hat ===== //
+		
+		case 59: 
+		{
+				NewTextBox("Yeah, no damsel in my life, just me and my hat... well just me now.",2, 
+				["60: What's in it for me? Is there a reward?", 
+				"61: Well don't worry that hat is as good as found!"]);
+		 
+			break;
+		}
+		
+		case 60: 
+		{
+			if (global.questStatus[? "TheHatQuest"] != 4)
+			{
+				NewTextBox("Oh, I guess I could offer a reward if it would make it more attractive to you. All I have is 25g though.",2, 
+				["62: Now we're talking. I'm in.", 
+				"63: Sorry I'm not interested"]);
+			}
+			if (global.questStatus[? "TheHatQuest"] == 4)
+			{
+				NewTextBox("25g is all I possess, but it's yours if you can deliever the hat.",2, 
+				["62: Fine, I'm in.",
+				"0: Sorry I'm not interested"]);
+			}
+			
+			break;
+		}
+		
+		case 61: // free
+		{
+			NewTextBox("Amazing!",2,)
+			NewTextBox("I lost it while I was exploring the cave to the east. I'm not sure how you'll get in there though as there was a cave-in last week.",2);
+				global.questStatus[? "TheHatQuest"] = 1;
+					
+			break;
+		}
+		
+		case 62: // 25g
+		{
+			NewTextBox("Amazing!",2,)
+			NewTextBox("I lost it while I was exploring the cave to the east. I'm not sure how you'll get in there though as there was a cave-in last week.",2);
+			global.questStatus[? "TheHatQuest"] = 2;
+					
+			break;
+		}
+		case 63: // Not interested
+		{
+			global.questStatus[? "TheHatQuest"] = 4;
+						
+			break;
+		}
+		
+		case 64: 
+		{
+			NewTextBox("Oh, that's a shame... well hopefully soon.",2);			
+			break;
+		}
+		
+		case 65: 
+		{
+			NewTextBox("Mate, do you think I'd be outsourcing this task for my last few gold pieces if I knew?",2, 
+			["0: I guess that's why I get paid the big bucks huh?, I'll figure it out"]);	
+			break;
+		}
+		case 66: 
+		{
+			NewTextBox("Holy Crap! You did it! That's amazing! You're so kind!",2, 
+			["68: Don't mention it! Helping you is all the reward I need!", 
+			"70: Yeah, so I've had some bills come up and was wondering if you'd maybe be up for some sort of reward?"]);	
+			break;
+		}
+		case 67: 
+		{
+			NewTextBox("Holy Crap! You did it! That's amazing! You're so kind!",2, 
+			["68: Don't mention it! I've been thinking, you seem down on your luck, why don't you keep the reward too!", 
+			"69: No problem, that'll be 25 big ones!"]);	
+			break;
+		}
+		case 68: 
+		{
+			NewTextBox("Thanks so much stranger! I'll be sure to talk you up about town!",2);
+			global.playerGoodness += 1;
+			global.questStatus[? "TheHatQuest"] = 3
+			with (oQuestNPC) sprite_index = sQuestieHat;
+			with (oHat) instance_destroy();
+			PlayerDropItem();
+			break;
+		}
+		case 69: 
+		{
+			if (global.questStatus[? "TheHatQuest"] == 2)
+			{
+				NewTextBox("Oh, yes, of course. Here you go... Thanks again!",2);	
+				global.playerMoney += 25;
+				global.questStatus[? "TheHatQuest"] = 3
+				with (oQuestNPC) sprite_index = sQuestieHat;
+				with (oHat) instance_destroy();
+				PlayerDropItem();
+				break;
+			}
+			if (global.questStatus[? "TheHatQuest"] == 1)
+			{
+				NewTextBox("Wow, that's a dick move... but I really want my grandpa's hat, sure here's 25g it's all I've got.",2)
+				global.playerMoney += 25;
+				global.questStatus[? "TheHatQuest"] = 3
+				with (oQuestNPC) sprite_index = sQuestieHat;
+				with (oHat) instance_destroy();
+				PlayerDropItem();
+				break;
+			}
+		}
+		
+		
 		default: break;
 		
 		//========= Andy Dialogue
@@ -166,9 +370,10 @@ function DialogueResponses(response)
 		
 		
 	}
-
-
 }
+
+
+
 
 
 

@@ -5,7 +5,8 @@ event_inherited();
 // ensure no animations
 image_speed = 0;
 
-if (global.questStatus[? "TheHatQuest"] == 2)
+if (global.questStatus[? "TheHatQuest"] == 3)
 {
 	sprite_index = sQuestieHat;
 }
+

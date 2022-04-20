@@ -1,5 +1,6 @@
 function EnemyTileCollision()
 {
+	
 // ===== NEW OBJECT BASED COLISION ===== //
 	
 	var _collision = false;
@@ -97,6 +98,7 @@ return _collision;
 	
 return _collision;
 */
+
 }
  
  
@@ -109,6 +111,7 @@ function EnemyWait()
 		state = stateTarget;	
 	}
 }
+
 
 
 

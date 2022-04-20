@@ -9,49 +9,56 @@ function ActivateHatCat()
 			if (_hasHat)
 			{
 				//complete quest
-				NewTextBox("Wow, you found my hat without me even asking!",2);
-				NewTextBox("You are a true hero indeed!",2);
-				global.questStatus[? "TheHatQuest"] = 2
-				with (oQuestNPC) sprite_index = sQuestieHat;
-				with (oHat) instance_destroy();
-				PlayerDropItem();
+				NewTextBox("Hey! Where did you get that hat?",2, ["50: I just found it lying around.", "51: Oh this old thing, I've always had this"]);
+				
 			}
 			else
 			{
 				//offer quest
-				NewTextBox("Hello there! You look like a brave adventurer. What with the cape and all.",2);
+				NewTextBox("Woah... nice cape. You must be an adventurer looking for quests.",2);
 				NewTextBox("Could you help me find my missing hat?",2, 
-				["4: Of course!", "5: This task is beneath me"]);
+				["59: I knew I'd have to grind in this career, but a hat? No damsel in distress? Is it at least guarded by a dragon?", 
+				"60: This task is beneath me.",
+				"61: Oooh eee! A quest! I'm in!"]);
 				
 			}
 		} break;
 		
-		case 1: // quest in progress
-		{
-			if (_hasHat)
+		case 1: // quest in progress for free
 			{
-				//complete quest
-				NewTextBox("Wow, you found my hat!",2);
-				NewTextBox("You are a true hero indeed!",2);
-				global.questStatus[? "TheHatQuest"] = 2
-				with (oQuestNPC) sprite_index = sQuestieHat;
-				with (oHat) instance_destroy();
-				PlayerDropItem();
-				
-			}
-			else
-			{
-				//clue reminder
-				NewTextBox("I think I left my hat in the scary cave to the north-east.",2);
-				NewTextBox("You might need some items to get there.",2);
-				
-			}
-		} break;
+				if (_hasHat)
+				{
+					NewTextBox("66: I sure do.",2);
+				}	
+				else
+				{
+					NewTextBox("Any news on my hat?",2, ["64: No, I haven't gotten it yet.", "65: How would you get through the cave-in?"]);	
+				}
+			} break;
 		
-		case 2: //quest already completed
+		case 2: // quest in progress for money
+			{
+				if (_hasHat)
+				{
+					NewTextBox("67: I sure do.",2);
+				}	
+				else
+				{
+					NewTextBox("Any news on my hat?",2, ["64: No, I haven't gotten it yet.", "65: How would you get through the cave-in?"]);	
+				}
+			} break;
+		
+		case 3: //quest already completed
 		{
 				//thanks again
-				NewTextBox("Thanks so much, I look so great in my hat!",2);
+				NewTextBox("Thanks so much, I look so great in my grandpa's hat!",2);
+		} break;
+		
+		case 4: //quest denied but returning
+		{
+				NewTextBox("Hey, reconsidered that quest?",2,
+				["60: Yeah, what was the reward again?","0:No way!"]				
+				);
 		} break;
 	}
 }
@@ -153,6 +160,7 @@ function ActivateAndy()
 		default: show_debug_message("its fucked");break;
 	}
 }
+
 
 
 
