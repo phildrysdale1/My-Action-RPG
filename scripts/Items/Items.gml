@@ -63,6 +63,17 @@ function UseItemHook()
 	localFrame = 0;
 	
 }
+
+function UseItemHealth()
+{
+	if (global.playerAmmo[ITEM.HEALTH] > 0)
+	{
+		global.playerAmmo[ITEM.HEALTH]--;
+		global.playerHealth += min(1, global.playerHealthMax);
+			
+	}
+	
+}
 // Bouncing items for fragments and item drops
 function ItemBounce()
 {
@@ -113,6 +124,7 @@ function PurchaseItem(_item, _amount, _cost)
 		NewTextBox("Sorry your broke ass can't afford this.",1)
 	}
 }
+
 
 
 

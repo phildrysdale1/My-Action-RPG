@@ -127,6 +127,8 @@ function PlayerStateFree() // Idle and walk
 			
 			case ITEM.HOOK: UseItemHook() ;break;
 			
+			case ITEM.HEALTH: UseItemHealth() ;break;
+			
 			default: break;
 		}
 	}
@@ -408,6 +410,7 @@ function PlayerStateDead() // Handle player death
 		}
 	}
 }
+
 
 
 

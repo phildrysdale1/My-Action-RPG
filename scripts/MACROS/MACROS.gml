@@ -34,6 +34,7 @@ enum ITEM
 	BOMB,
 	BOW,
 	HOOK,
+	HEALTH,
 	
 	TYPE_COUNT
 }
@@ -71,6 +72,7 @@ enum DESTROYNOISE
 	BOULDER,
 	CERAMIC
 }
+
 
 
 

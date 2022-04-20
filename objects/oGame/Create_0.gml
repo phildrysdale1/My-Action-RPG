@@ -28,6 +28,7 @@ global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1); // stops showing if there
 global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
 global.playerAmmo[ITEM.BOMB] = 0;
 global.playerAmmo[ITEM.BOW] = 0;
+global.playerAmmo[ITEM.HEALTH] = 0;
 
 // global player goodness
 global.playerGoodness = 0; // moves - for evil + for good
@@ -53,6 +54,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

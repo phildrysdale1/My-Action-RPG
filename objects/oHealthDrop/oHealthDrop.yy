@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "sHealthPotion",
+    "path": "sprites/sHealthPotion/sHealthPotion.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "pCollectible",
+    "path": "objects/pCollectible/pCollectible.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"collectScript","path":"objects/pCollectible/pCollectible.yy",},"objectId":{"name":"pCollectible","path":"objects/pCollectible/pCollectible.yy",},"value":"CollectAmmo","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"collectScriptArg","path":"objects/pCollectible/pCollectible.yy",},"objectId":{"name":"pCollectible","path":"objects/pCollectible/pCollectible.yy",},"value":"[ITEM.HEALTH, 1]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Items",
+    "path": "folders/Objects/Entities/World/Items.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oHealthDrop",
+  "tags": [],
+  "resourceType": "GMObject",
+}
