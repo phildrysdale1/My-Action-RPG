@@ -20,6 +20,7 @@ global.gameSaveSlot = 0;
 global.playerHealthMax = 3.0;
 global.playerHealth = global.playerHealthMax;
 global.playerMoney = 0;
+global.playerGoodnessMax = 25;
 
 // global player items
 global.playerHasAnyItems = false;
@@ -35,11 +36,11 @@ global.playerGoodness = 0; // moves - for evil + for good
 // dialogue trackers
 global.playerDialogue = 0; // set to certain numbers for tracking goodness in more complex conversations.
 
-// manage quests
+//=====  manage quests ===== //
 global.questStatus = ds_map_create(); // Allows for readable quest names rather than just numbers
 global.questStatus[? "TheHatQuest"] = 0; //0 - not started, 1 - doing for free, 2 - doing for gold, 3 - done, 4 - rejected
 global.boulderDestroyed = 0;
-global.questStatus[? "TimmyQuest"] = 0;
+global.questStatus[? "TimmyQuest"] = 0; // See ActivateKaren/Andy for breakdown of cases
 
 // global variable for if the player is carrying something
 global.iLifted = noone;
@@ -54,6 +55,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

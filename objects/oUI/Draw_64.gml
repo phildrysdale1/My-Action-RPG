@@ -8,6 +8,9 @@ var _playerHealthFrac = frac(_playerHealth); // returns any fraction on player h
 _playerHealth -= _playerHealthFrac; // sets playerHealth to always be an integer
 var _xx = 28;
 var _yy = 31;
+var _playerGoodness = global.playerGoodness;
+var _playerGoodnessMax = global.playerGoodnessMax;
+
 
 //Draw Health
 // loop to draw heart sprites
@@ -67,11 +70,18 @@ if (global.playerHasAnyItems)
 }
 
 //===== Draw Goodness =====//
-_xx = RESOLUTION_W - 16;
-_yy = 16;
 
-	DrawSetText(c_white, fText, fa_right, fa_bottom);
-	draw_text(_xx, _yy, global.playerGoodness);
+draw_sprite(sGoodnessBarBG, 0, goodnessBarX, goodnessBarY);
+if (_playerGoodness > 0)
+{
+	draw_sprite_stretched(sGoodBlock, 0, goodnessBarX, goodnessBarY, goodnessPercent * goodnessBarWidth, goodnessBarHeight);
+}
+if (_playerGoodness < 0)
+{
+	draw_sprite_stretched(sBadBlock, 0, goodnessBarX - abs(goodnessPercent) * goodnessBarWidth, goodnessBarY, abs(goodnessPercent) * goodnessBarWidth, goodnessBarHeight);
+}
+draw_sprite(sGoodnessBar, 0, goodnessBarX, goodnessBarY);
+
 
 //===== Draw Pause Menu =====//
 
@@ -100,5 +110,6 @@ if (global.gamePaused)
 		draw_set_alpha(1.0);		
 	}
 }
+
 
 

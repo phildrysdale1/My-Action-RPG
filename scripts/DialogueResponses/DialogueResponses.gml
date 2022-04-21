@@ -87,7 +87,10 @@ function DialogueResponses(response)
 				global.playerGoodness += 1; 
 			}
 			global.questStatus[? "TimmyQuest"] = 1; // found out about Timmy
-			NewTextBox("Well my husband, Andy, just up and left me, and took my little girl too...",2,["15: Bummer", "16: I'm sorry, that must be difficult.", "17: Pfft, fuck men am I right? *attempt high-five*"]); 
+			NewTextBox("Well my husband, Andy, just up and left me, and took my little girl too...",2,
+			["15: Bummer", 
+			"16: I'm sorry, that must be difficult.", 
+			"17: Pfft, fuck men am I right? *attempt high-five*"]); 
 			break;
 		}
 		
@@ -96,7 +99,9 @@ function DialogueResponses(response)
 			
 			NewTextBox("Well he... he was quite... aggressive... to be honest, I should have left him a long time ago! But I'm really worried about my little girl Kimmy.",2)
 			NewTextBox("She's not well you see and without me to care for her. Not to mention I worry that my husband might hurt her.",2,
-				["17:Your husband was hitting you?", "18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", "19:Yeah... the thing is, I don't do domestics... good luck though."]); 
+				["17:Your husband was hitting you?", 
+				"18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", 
+				"11:Yeah... the thing is, I don't do domestics... good luck though."]); 
 			break;
 		}
 		
@@ -106,7 +111,9 @@ function DialogueResponses(response)
 			NewTextBox("Yes, it has been. The truth is though... well...",2)
 			NewTextBox("Well he... he was quite... aggressive... to be honest, I should have left him a long time ago! But I'm really worried about my little girl Kimmy.",2)
 			NewTextBox("She's not well you see and without me to care for her. Not to mention I worry that my husband might hurt her.",2,
-				["17:Your husband was hitting you?", "18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", "11:Yeah... the thing is, I don't do domestics... good luck though."]); 
+				["17:Your husband was hitting you?", 
+				"18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", 
+				"11:Yeah... the thing is, I don't do domestics... good luck though."]); 
 			break;
 		}
 		
@@ -162,7 +169,7 @@ function DialogueResponses(response)
 		
 		
 		//===== If we meet questie and already have his hat =====//
-		case 50: 
+		case 50: // From ActivateHatCat 1a
 		{
 			
 			NewTextBox("That's my hat, I lost it while exploring the caves! Can I have it back?",2, 
@@ -172,7 +179,7 @@ function DialogueResponses(response)
 			
 			break;
 		}
-		case 51: 
+		case 51: // From ActivateHatCat 0a
 		{
 			global.playerGoodness = -1;
 			NewTextBox("You lying bastard, I lost that hat while exploring the caves! Give it back to me!",2, 
@@ -182,7 +189,7 @@ function DialogueResponses(response)
 			
 			break;
 		}
-		case 52: 
+		case 52: // From 50, 51
 		{
 			global.playerGoodness = -1;
 			NewTextBox("Oh come on, surely you don't care about a crappy old hat. It has sentimental value to me! My grandfather gave me that cap on his deathbed.",2, 
@@ -193,7 +200,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 53: 
+		case 53: // From 50, 51, 52, 55
 		{
 			NewTextBox("Typical, god-damn hustle economy. Nobody ever out to do the nice thing, all I've got is 25g.",2, 
 			["56: 25g will do just nicely thank you very much.", 
@@ -202,7 +209,7 @@ function DialogueResponses(response)
 			
 			break;
 		}   
-		case 54: 
+		case 54: // From 50, 51, 52, 55
 		{
 			global.playerGoodness = +1;
 			NewTextBox("Thank you so much kind sir!",2);
@@ -213,7 +220,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 55: 
+		case 55: // From 52
 		{
 			NewTextBox("Don't be so tough on the guy, he worked his whole life providing for his family, please let me have this keepsake of his back.",2, 
 			["53: Tell you what, you can have it back for a price.", 
@@ -222,7 +229,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 56: 
+		case 56: // From 53, 57
 		{
 			global.playerMoney += 25;
 			global.questStatus[? "TheHatQuest"] = 3
@@ -231,7 +238,7 @@ function DialogueResponses(response)
 			PlayerDropItem();
 			break;
 		}
-		case 57: 
+		case 57: // From 53
 		{
 			NewTextBox("Please sir, think of my dead grandpa!",2,
 			["56: Fine give me the 25g", 
@@ -239,7 +246,7 @@ function DialogueResponses(response)
 			
 			break;
 		}
-		case 58: 
+		case 58: // From 53
 		{
 			global.playerMoney += 10;
 			global.questStatus[? "TheHatQuest"] = 3
@@ -251,7 +258,7 @@ function DialogueResponses(response)
 		
 		// ===== Questie meeting don't have the hat ===== //
 		
-		case 59: 
+		case 59: // From ActivateHatCat 0b
 		{
 				NewTextBox("Yeah, no damsel in my life, just me and my hat... well just me now.",2, 
 				["60: What's in it for me? Is there a reward?", 
@@ -260,7 +267,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 60: 
+		case 60: // From 59
 		{
 			if (global.questStatus[? "TheHatQuest"] != 4)
 			{
@@ -278,7 +285,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 61: // free
+		case 61: // free - // From 59
 		{
 			NewTextBox("Amazing!",2,)
 			NewTextBox("I lost it while I was exploring the cave to the east. I'm not sure how you'll get in there though as there was a cave-in last week.",2);
@@ -287,7 +294,7 @@ function DialogueResponses(response)
 			break;
 		}
 		
-		case 62: // 25g
+		case 62: // 25g - // From 59, 60
 		{
 			NewTextBox("Amazing!",2,)
 			NewTextBox("I lost it while I was exploring the cave to the east. I'm not sure how you'll get in there though as there was a cave-in last week.",2);
@@ -295,40 +302,40 @@ function DialogueResponses(response)
 					
 			break;
 		}
-		case 63: // Not interested
+		case 63: // Not interested - // From 60
 		{
 			global.questStatus[? "TheHatQuest"] = 4;
 						
 			break;
 		}
 		
-		case 64: 
+		case 64: // From ActivateHatCat 1b, 2b
 		{
 			NewTextBox("Oh, that's a shame... well hopefully soon.",2);			
 			break;
 		}
 		
-		case 65: 
+		case 65: // From ActivateHatCat 1b
 		{
 			NewTextBox("Mate, do you think I'd be outsourcing this task for my last few gold pieces if I knew?",2, 
 			["0: I guess that's why I get paid the big bucks huh?, I'll figure it out"]);	
 			break;
 		}
-		case 66: 
+		case 66:  // From ActivateHatCat 1a
 		{
 			NewTextBox("Holy Crap! You did it! That's amazing! You're so kind!",2, 
 			["68: Don't mention it! Helping you is all the reward I need!", 
-			"70: Yeah, so I've had some bills come up and was wondering if you'd maybe be up for some sort of reward?"]);	
+			"69: Yeah, so I've had some bills come up and was wondering if you'd maybe be up for some sort of reward?"]);	
 			break;
 		}
-		case 67: 
+		case 67:  // From ActivateHatCat 2a
 		{
 			NewTextBox("Holy Crap! You did it! That's amazing! You're so kind!",2, 
 			["68: Don't mention it! I've been thinking, you seem down on your luck, why don't you keep the reward too!", 
 			"69: No problem, that'll be 25 big ones!"]);	
 			break;
 		}
-		case 68: 
+		case 68:  // From 66, 67
 		{
 			NewTextBox("Thanks so much stranger! I'll be sure to talk you up about town!",2);
 			global.playerGoodness += 1;
@@ -338,7 +345,7 @@ function DialogueResponses(response)
 			PlayerDropItem();
 			break;
 		}
-		case 69: 
+		case 69: // From 67 (a), 66 (b)
 		{
 			if (global.questStatus[? "TheHatQuest"] == 2)
 			{
@@ -362,7 +369,6 @@ function DialogueResponses(response)
 			}
 		}
 		
-		
 		default: break;
 		
 		//========= Andy Dialogue
@@ -371,6 +377,7 @@ function DialogueResponses(response)
 		
 	}
 }
+
 
 
 

@@ -9,7 +9,9 @@ function ActivateHatCat()
 			if (_hasHat)
 			{
 				//complete quest
-				NewTextBox("Hey! Where did you get that hat?",2, ["50: I just found it lying around.", "51: Oh this old thing, I've always had this"]);
+				NewTextBox("Hey! Where did you get that hat?",2, 
+				["50: I just found it lying around.", 
+				"51: Oh this old thing, I've always had this"]);
 				
 			}
 			else
@@ -78,47 +80,111 @@ function ActivateKaren()
 			"12: What the gossip about town?"]);
 		} break;
 		
-		case 0.1: // intial hello - already met Andy and talked about Timmy
+		case 10: // met Karen talked about Kimmy
 		{
-			//this section is not setup
 			NewTextBox("", 2,
 			[""]);
 		} break;
 		
-		case 1: // intial hello - met Karen talked about Kimmy
+		case 11: // Agreed to help Karen - reward money 100g
 		{
-			//this section is not setup
-			NewTextBox("", 2,
-			[""]);
-		} break;
-		
-		case 1.1: // met Andy and talked about Timmy returned to confront Karen
-		{
-			//this section is not setup
-			NewTextBox("", 2,
-			[""]);
-		} break;
-		
-		case 2.1: // quest in progress - reward money 100g
-		{
-			NewTextBox("Hey did you find Timmy?", 2,["0: No, not yet"]);
+			NewTextBox("Hey did you find Kimmy?", 2,["0: No, not yet"]);
 			
 		} break;
 		
-		case 2.11: // have found out about Timmy
+		case 11.1: // Agreed to help Karen - reward 1.5 damage sword
 		{
-			NewTextBox("Hey did you find Timmy yet?", 2,
+			NewTextBox("Hey did you find Kimmy?", 2,["0: No, not yet"]);
+			
+		} break;
+		
+		case 12: // have found out about Timmy
+		{
+			NewTextBox("Hey did you find Kimmy yet?", 2,
 			["0: No, not yet (lie)", 
 			"22: I talked with your husband... It seem's you lied to me.", 
-			"23: You didn't tell me that Kimmy left of her own free will."]);
-			
+			"23: You didn't tell me that \"Kimmy\" left of their own free will."]);
 		} break;
 		
-		case 2.2: //quest in progress - reward sword 1.5x damage
+		case 13: // commit to help Karen get Kimmy back
 		{
-				//thanks again
-			
+			NewTextBox("", 2,
+			[""]);
 		} break;
+		
+		case 14: // spoken to Kimmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 15: // double-cross Andy and help Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 16: // commit to helping Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 17: // quest complete for Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+
+		
+		case 20: // met Andy and talked about Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 21: // agreed to help Andy for free
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 22: // have found out about Kimmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 23: // commit to help Andy keep Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 24: // spoken to Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		}
+				
+		case 25: // double-cross Karen and help Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 26: // commit to helping Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 27: // quest complete for Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+	
 		
 		default: show_debug_message("its fucked");break;
 	}
@@ -128,7 +194,6 @@ function ActivateAndy()
 {
 	switch (global.questStatus[? "TimmyQuest"])
 	{
-		
 		case 0: // intial hello - not met Karen going to find out about Kimmy
 		{
 			//this section is not setup
@@ -138,38 +203,117 @@ function ActivateAndy()
 			"??: What are you living in the middle of this slime infested forest for?"]);
 		} break;
 		
-		case 1: // intial hello - met Karen talked about Timmy
+		case 10: // met Karen talked about Kimmy
 		{
-			//this section is not setup
-			NewTextBox("Hello there, I'm Andy, how's it going?", 2,
+			NewTextBox("", 2,
 			[""]);
 		} break;
 		
-		case 2.1: // quest in progress - reward money 100g
+		case 11: // Agreed to help Karen - reward money 100g
 		{
-			NewTextBox("", 2,[""]);
+			NewTextBox("Hey did you find Kimmy?", 2,["0: No, not yet"]);
 			
 		} break;
 		
-		case 2.2: //quest in progress - reward sword 1.5x damage
+		case 11.1: // Agreed to help Karen - reward 1.5 damage sword
 		{
-				//thanks again
+			NewTextBox("Hey did you find Kimmy?", 2,["0: No, not yet"]);
 			
 		} break;
 		
-		default: show_debug_message("its fucked");break;
+		case 12: // have found out about Timmy
+		{
+			NewTextBox("Hey did you find Kimmy yet?", 2,
+			["0: No, not yet (lie)", 
+			"22: I talked with your husband... It seem's you lied to me.", 
+			"23: You didn't tell me that \"Kimmy\" left of their own free will."]);
+		} break;
+		
+		case 13: // commit to help Karen get Kimmy back
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 14: // spoken to Kimmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 15: // double-cross Andy and help Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 16: // commit to helping Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 17: // quest complete for Karen
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+
+		
+		case 20: // met Andy and talked about Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 21: // agreed to help Andy for free
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 22: // have found out about Kimmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 23: // commit to help Andy keep Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 24: // spoken to Timmy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+				
+		case 25: // double-cross Karen and help Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 26: // commit to helping Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+		
+		case 27: // quest complete for Andy
+		{
+			NewTextBox("", 2,
+			[""]);
+		} break;
+
 	}
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
