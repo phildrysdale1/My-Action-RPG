@@ -8,8 +8,7 @@ var _playerHealthFrac = frac(_playerHealth); // returns any fraction on player h
 _playerHealth -= _playerHealthFrac; // sets playerHealth to always be an integer
 var _xx = 28;
 var _yy = 31;
-var _playerGoodness = global.playerGoodness;
-var _playerGoodnessMax = global.playerGoodnessMax;
+
 
 
 //Draw Health
@@ -71,6 +70,10 @@ if (global.playerHasAnyItems)
 
 //===== Draw Goodness =====//
 
+goodnessPercent = (_playerGoodness / _playerGoodnessMax)
+_playerGoodness = global.playerGoodness;
+_playerGoodnessMax = global.playerGoodnessMax;
+
 draw_sprite(sGoodnessBarBG, 0, goodnessBarX, goodnessBarY);
 if (_playerGoodness > 0)
 {
@@ -110,6 +113,7 @@ if (global.gamePaused)
 		draw_set_alpha(1.0);		
 	}
 }
+
 
 
 

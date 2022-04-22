@@ -54,7 +54,8 @@ function DialogueResponses(response)
 				"Oh I see... well... err... what can I do for you then stranger?",2, 
 				["12: What gossip have you heard recently?", 
 				"13: Is there any work to be had in this town?",
-				"14: I'm just kidding what's wrong?"]
+				"14: I'm just kidding what's wrong?",
+				"0: Nothing, I'm outta here."]
 				); 
 				 break;
 		}
@@ -120,7 +121,8 @@ function DialogueResponses(response)
 		case 17: 
 		{
 			NewTextBox("That was the least of it... still it's over now, but I just can't sleep until I know Kimmy will be safe.",2,
-				["18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", "11:He sounds like a dangerous guy, good luck with all that."]); 
+				["18: Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!", 
+				"11:He sounds like a dangerous guy, good luck with all that."]); 
 			break;
 		}
 		
@@ -128,7 +130,9 @@ function DialogueResponses(response)
 		{
 			NewTextBox("Would you do that? It might be dangerous and I'm not sure how much I could pay you as a reward. My husband was the breadwinner in the home. ",2)
 			NewTextBox("I'd give you everything I have though.",2,
-				["19: Knowing I've helped is all the reward I need.", "19:It's OK whatever you can afford will be fine!", "20: Ah, a big job like this.. I'm gonna need at least 100g or a magical sword or something."]); 
+				["19: Knowing I've helped is all the reward I need.", 
+				"19:It's OK whatever you can afford will be fine!", 
+				"20: Ah, a big job like this.. I'm gonna need at least 100g or a magical sword or something."]); 
 			break;
 		}
 		
@@ -154,7 +158,8 @@ function DialogueResponses(response)
 			global.playerDialogue = 20;
 			global.playerGoodness -= 1; 
 			NewTextBox("Oh, I do have my husbands sword, it's not magical to be fair, but looking at yours it would definitely be an upgrade! I'd be happy to part with it in return for your help.",2,
-				["19: Sounds like we have a deal.", "21: Look, I already look like an idiot with this sword, you really think I'm going to take another non-magical sword. It's not like this is my first quest lady!"]); 
+				["19: Sounds like we have a deal.", 
+				"21: Look, I already look like an idiot with this sword, you really think I'm going to take another non-magical sword. It's not like this is my first quest lady!"]); 
 			break;
 		}
 		
@@ -162,7 +167,8 @@ function DialogueResponses(response)
 		{
 			
 			NewTextBox("OK, well let me know if you change your mind, who knows, maybe I'll win the lottery or something. Ugh, who am I kidding, not with my luck.",2,
-				["19: I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!", "11: Well, good luck getting your kid back with no magical sword."]); 
+				["19: I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!", 
+				"11: Well, good luck getting your kid back with no magical sword."]); 
 			break;
 		}
 		// ====== Returning to questie after not being interested ===== //
@@ -377,6 +383,7 @@ function DialogueResponses(response)
 		
 	}
 }
+
 
 
 
