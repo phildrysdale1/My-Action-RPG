@@ -241,6 +241,7 @@
     {"id":{"name":"sGoodnessBarBG","path":"sprites/sGoodnessBarBG/sGoodnessBarBG.yy",},"order":4,},
     {"id":{"name":"scribble_is_text_element","path":"scripts/scribble_is_text_element/scribble_is_text_element.yy",},"order":6,},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},"order":1,},
+    {"id":{"name":"oTextBox","path":"objects/oTextBox/oTextBox.yy",},"order":2,},
     {"id":{"name":"sndSword2","path":"sounds/sndSword2/sndSword2.yy",},"order":1,},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"order":2,},
     {"id":{"name":"sPlayerAttackSlash","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"order":1,},
@@ -415,7 +416,9 @@
   "TextureGroups": [
     {"isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"test.yarn","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.300.0.499",
   },

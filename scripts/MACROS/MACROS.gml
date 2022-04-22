@@ -4,8 +4,8 @@
 #macro ROOM_START rTitle
 	
 // set resolution of game
-#macro RESOLUTION_W 320
-#macro RESOLUTION_H 180
+#macro RESOLUTION_W 640
+#macro RESOLUTION_H 360
 	
 // macros for transitions
 #macro TRANSITION_SPEED 0.02
@@ -72,6 +72,8 @@ enum DESTROYNOISE
 	BOULDER,
 	CERAMIC
 }
+
+
 
 
 

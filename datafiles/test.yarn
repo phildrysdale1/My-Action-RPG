@@ -1,0 +1,128 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 149,122
+__PrivCrochet_tags: 
+title: KarenMeet01
+---
+Karen: Hello there, I'm Karen, how are you?
+-> Fine, and you?
+    Karen: Thanks so much for asking, nobody ever stops to listen these days. To be honest I'm not great at all!
+    -> I'm really sorry to hear that, what's going on?
+        Karen: Well my husband, Andy, just up and left me, and took my little girl too...
+            -> Bummer.
+                <<jump KarensQuestInit>>
+            -> I'm sorry, that must be difficult.
+                <<jump KarensQuestInit>>
+            -> Pfft, fuck men am I right? *attempt high-five*
+                <<jump KarensQuestInit>>
+            -> That really sounds like a you problem to be honest.
+    -> Umm... I was just trying to be polite...
+        <<jump KarenRejectedIntro>>
+-> None of your damn business.
+    <<jump KarenRejectedIntro>>
+-> What's the gossip about town?
+    Karen: That my husband is a piece of shit!
+        -> That sounds like it comes with a story!
+            Karen: Well my husband, Andy, just up and left me, and took my little girl too...
+            -> Bummer.
+                <<jump KarensQuestInit>>
+            -> I'm sorry, that must be difficult.
+                <<jump KarensQuestInit>>
+            -> Pfft, fuck men am I right? *attempt high-five*
+                <<jump KarensQuestInit>>
+            -> That really sounds like a you problem to be honest.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 549,116
+__PrivCrochet_tags: 
+title: KarensQuestInit
+---
+Karen: Well he... he was quite... aggressive... to be honest, I should have left him a long time ago! But I'm really worried about my little girl Kimmy.
+Karen: She's not well you see and without me to care for her. Not to mention I worry that my husband might hurt her.
+    -> Your husband was hitting you?
+        Karen: That was the least of it... still it's over now, but I just can't sleep until I know Kimmy will be safe.
+        -> Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!
+            <<jump KarenQuestPrice>>
+        -> He sounds like a dangerous guy, good luck with all that.
+            <<jump KarenRejectedIntro>>
+    -> Sounds like someone needs to get Kimmy out of that asshole's custody and back with her momma!
+        <<jump KarenQuestPrice>>
+    -> Yeah... the thing is, I don't do domestics... good luck though.
+        <<jump KarenRejectedIntro>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 337,-326
+__PrivCrochet_tags: 
+title: KarenRejectedIntro
+---
+Karen: Oh I see... well... err... what can I do for you then stranger?
+        -> What gossip have you heard recently?
+            Karen: That my husband is a piece of shit!
+            -> That sounds like it comes with a story!
+                Karen: Well my husband, Andy, just up and left me, and took my little girl too...
+                -> Bummer.
+                    <<jump KarensQuestInit>>
+                -> I'm sorry, that must be difficult.
+                    <<jump KarensQuestInit>>
+                -> Pfft, fuck men am I right? *attempt high-five*
+                    <<jump KarensQuestInit>>
+            -> That really sounds like a you problem to be honest.
+        -> Is there any work to be had in this town?
+            Karen: You could check the town bulletin board or ask around at the pub maybe.
+            -> Thanks, I'll do that.
+        -> I'm just kidding what's wrong?
+            Karen: Well my husband, Andy, just up and left me, and took my little girl too...
+            -> Bummer.
+                <<jump KarensQuestInit>>
+            -> I'm sorry, that must be difficult.
+                <<jump KarensQuestInit>>
+            -> Pfft, fuck men am I right? *attempt high-five*
+                <<jump KarensQuestInit>>
+        -> Nothing, I'm outta here.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 985,114
+__PrivCrochet_tags: 
+title: KarenQuestPrice
+---
+Karen: Would you do that? It might be dangerous.
+    -> Sure, I'm a hero, it's what we do.
+        <<set $global.quest.karenQuestReward = "free">>
+        <<jump KarenQuestBegins>>
+    -> If you've got the coin, I'm in!
+        Karen: Oh, I see, yes, of course there would be a charge. It's just that, well, I don't have much. My husband was the breadwinner, I'm quite traditional like that, so I don't have much.
+            <<jump KarenQuestBeginsNotFree>>>>>>>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1687,276
+__PrivCrochet_tags: 
+title: KarenQuestBegins
+---
+Karen: Thank you, thank you, thank you. I don't know where he's gone... I don't think he's still in town.
+    -> I'm on it! I will return with little Kimmy before you know it!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1388,-112
+__PrivCrochet_tags: 
+title: KarenQuestBeginsNotFree>>>>>>
+---
+Karen: But I'd give you all I have to get Kimmy back home with me!
+            -> You know, let's call this a freebie, just leave me a great review on the town bulletin board.
+                <<set $global.quest.karenQuestReward = "free">>
+                <<jump KarenQuestBegins>>
+            -> That's OK, I'll take whatever you have.
+                <<set $global.quest.karenQuestReward = "money">>
+                <<jump KarenQuestBegins>>
+            -> Ah, a big job like this... I'm gonna need at least 100g or a magical sword or something.
+                Karen: Oh, I do have my husbands sword, it's not magical to be fair, but looking at yours it would definitely be an upgrade! I'd be happy to part with it in return for your help.
+                    -> Sounds like we have a deal. One kid for one sword.
+                        <<set $global.quest.karenQuestReward = "sword">>
+                        << jump KarenQuestBegins>>
+                    -> Look, I already look like an idiot with this sword, you really think I'm going to take another non-magical sword. It's not like this is my first quest lady!
+                        Karen: OK, well let me know if you change your mind, who knows, maybe I'll win the lottery or something. Ugh, who am I kidding, not with my luck.
+                        -> I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!
+                            <<set $global.quest.karenQuestReward = "sword">>
+                            << jump KarenQuestBegins>>
+                        -> Well, good luck getting your kid back with no magical sword.
+                            <<jump KarenRejectedIntro>>
+===

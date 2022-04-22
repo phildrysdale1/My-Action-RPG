@@ -68,6 +68,11 @@ function ActivateHatCat()
 
 function ActivateKaren()
 {
+	
+	NewConvo("KarenMeet01")
+	
+	#region // old code
+	/*
 	switch (global.questStatus[? "TimmyQuest"])
 	{
 		
@@ -188,6 +193,8 @@ function ActivateKaren()
 		
 		default: show_debug_message("its fucked");break;
 	}
+	*/
+	#endregion
 }
 
 function ActivateAndy()
@@ -317,3 +324,4 @@ function ActivateAndy()
 
 
 }
+

@@ -24,3 +24,4 @@ shakeRemain = max(0, shakeRemain - ((1/shakeLength) * shakeMagnitude)); // remov
 // Position camera 
 camera_set_view_pos(cam, x - viewWidthHalf, y - viewHeightHalf);
 
+
