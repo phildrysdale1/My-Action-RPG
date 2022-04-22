@@ -33,7 +33,7 @@ if (IsChatterbox(global.chatterbox)) and (text != undefined)
 
 		for (var i = 0; i < ChatterboxGetOptionCount(global.chatterbox); i++)
 		{	
-			_responseHeight = (max(string_length(ChatterboxGetOption(global.chatterbox, i)),54)/54) * 20; // figure out height of response based on char width of 60 divides total character lenght or 60 (whichever is higher) by 60 and times by 25 for height of each line.
+			_responseHeight = (max(string_length(ChatterboxGetOption(global.chatterbox, i)),50)/50) * 20; // figure out height of response based on char width of 60 divides total character lenght or 60 (whichever is higher) by 60 and times by 25 for height of each line.
 			if (i = responseSelected)
 			{
 				selected = "--> " // Selected text
@@ -55,7 +55,9 @@ if (IsChatterbox(global.chatterbox)) and (text != undefined)
 }
 else
 {
+	// global.playerGoodness = ChatterboxVariableGet(playerGoodness);
 	with (oPlayer) state = PlayerStateFree;	
 	instance_destroy();
 }
+
 

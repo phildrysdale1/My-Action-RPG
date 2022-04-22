@@ -1,10 +1,7 @@
 {
   "isDnd": false,
   "volume": 1.0,
-  "parentRoom": {
-    "name": "rParent",
-    "path": "rooms/rParent/rParent.yy",
-  },
+  "parentRoom": null,
   "views": [
     {"inherit":true,"visible":true,"xview":0,"yview":0,"wview":320,"hview":180,"xport":0,"yport":0,"wport":1280,"hport":720,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":true,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -44,7 +41,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":16777215,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":200.0,"resourceVersion":"1.0","name":"inst_638C7181","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oTitleScreen","path":"objects/oTitleScreen/oTitleScreen.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":232.0,"y":-16.0,"resourceVersion":"1.0","name":"inst_575EED5F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"tilesetId":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":12,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":12,"TileSerialiseData":[
 75,96,94,75,76,77,78,79,96,84,84,75,79,75,96,75,79,0,0,0,
 90,94,90,90,91,92,93,94,90,84,84,94,94,94,94,94,94,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

@@ -39,7 +39,7 @@ if (global.deleteSavePrompt == false)
 			global.gameSaveSlot = slotSelected;
 			if (!LoadGame(global.gameSaveSlot)) 
 			{
-				RoomTransition(TRANS_TYPE.SLIDE, rVillage);
+				RoomTransition(TRANS_TYPE.SLIDE, rTown);
 			}
 			loadingStarted = true;
 		}
@@ -58,6 +58,7 @@ if (global.deleteSavePrompt == false)
 	// Animate Player Icon
 	image_speed = sprIndex;
 	sprIndex += 0.27;
+
 
 
 

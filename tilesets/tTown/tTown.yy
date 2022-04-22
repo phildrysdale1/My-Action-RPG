@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sTilesTown",
-    "path": "sprites/sTilesTown/sTilesTown.yy",
+    "name": "sTilesExterior",
+    "path": "sprites/sTilesExterior/sTilesExterior.yy",
   },
-  "tileWidth": 16,
-  "tileHeight": 16,
+  "tileWidth": 32,
+  "tileHeight": 32,
   "tilexoff": 0,
   "tileyoff": 0,
   "tilehsep": 0,

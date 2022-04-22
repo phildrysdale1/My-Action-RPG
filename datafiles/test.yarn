@@ -4,33 +4,37 @@ __PrivCrochet_position: 149,122
 __PrivCrochet_tags: 
 title: KarenMeet01
 ---
-Karen: Hello there, I'm Karen, how are you?
--> Fine, and you?
-    Karen: Thanks so much for asking, nobody ever stops to listen these days. To be honest I'm not great at all!
-    -> I'm really sorry to hear that, what's going on?
-        Karen: Well my husband, Andy, just up and left me, and took my little girl too...
-            -> Bummer.
-                <<jump KarensQuestInit>>
-            -> I'm sorry, that must be difficult.
-                <<jump KarensQuestInit>>
-            -> Pfft, fuck men am I right? *attempt high-five*
-                <<jump KarensQuestInit>>
-            -> That really sounds like a you problem to be honest.
-    -> Umm... I was just trying to be polite...
-        <<jump KarenRejectedIntro>>
--> None of your damn business.
-    <<jump KarenRejectedIntro>>
--> What's the gossip about town?
-    Karen: That my husband is a piece of shit!
-        -> That sounds like it comes with a story!
+<<if visited("KarenQuestBegins") is true>>
+    <<jump KarenProgressCheck>>
+<<else>>
+    <<set $playerGoodness = 10>>
+    Karen: Hello there, I'm Karen, how are you?
+    -> I'm wonderful, I'm seeking adventure and feel so alive! How are you?
+        Karen: Thanks so much for asking, nobody ever stops to listen these days. To be honest I'm not great at all! 
+        -> I'm really sorry to hear that, what's going on?
             Karen: Well my husband, Andy, just up and left me, and took my little girl too...
-            -> Bummer.
-                <<jump KarensQuestInit>>
-            -> I'm sorry, that must be difficult.
-                <<jump KarensQuestInit>>
-            -> Pfft, fuck men am I right? *attempt high-five*
-                <<jump KarensQuestInit>>
-            -> That really sounds like a you problem to be honest.
+                -> Bummer.
+                    <<jump KarensQuestInit>>
+                -> I'm sorry, that must be difficult.
+                    <<jump KarensQuestInit>>
+                -> Pfft, fuck men am I right? *attempt high-five*
+                    <<jump KarensQuestInit>>
+                -> That really sounds like a you problem to be honest.
+        -> Umm... I was just trying to be polite...
+            <<jump KarenRejectedIntro>>
+    -> None of your damn business.
+        <<jump KarenRejectedIntro>>
+    -> What's the gossip about town?
+        Karen: That my husband is a piece of shit!
+            -> That sounds like it comes with a story!
+                Karen: Well my husband, Andy, just up and left me, and took my little girl too...
+                -> Bummer.
+                    <<jump KarensQuestInit>>
+                -> I'm sorry, that must be difficult.
+                    <<jump KarensQuestInit>>
+                -> Pfft, fuck men am I right? *attempt high-five*
+                    <<jump KarensQuestInit>>
+                -> That really sounds like a you problem to be honest.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 549,116
@@ -55,6 +59,7 @@ __PrivCrochet_position: 337,-326
 __PrivCrochet_tags: 
 title: KarenRejectedIntro
 ---
+<<>>>>
 Karen: Oh I see... well... err... what can I do for you then stranger?
         -> What gossip have you heard recently?
             Karen: That my husband is a piece of shit!
@@ -87,14 +92,14 @@ title: KarenQuestPrice
 ---
 Karen: Would you do that? It might be dangerous.
     -> Sure, I'm a hero, it's what we do.
-        <<set $global.quest.karenQuestReward = "free">>
+        <<set $karenQuestReward = "free">>
         <<jump KarenQuestBegins>>
     -> If you've got the coin, I'm in!
         Karen: Oh, I see, yes, of course there would be a charge. It's just that, well, I don't have much. My husband was the breadwinner, I'm quite traditional like that, so I don't have much.
-            <<jump KarenQuestBeginsNotFree>>>>>>>>
+            <<jump KarenQuestBeginsNotFree>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1687,276
+__PrivCrochet_position: 1687,274
 __PrivCrochet_tags: 
 title: KarenQuestBegins
 ---
@@ -104,25 +109,33 @@ Karen: Thank you, thank you, thank you. I don't know where he's gone... I don't 
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 1388,-112
 __PrivCrochet_tags: 
-title: KarenQuestBeginsNotFree>>>>>>
+title: KarenQuestBeginsNotFree
 ---
 Karen: But I'd give you all I have to get Kimmy back home with me!
-            -> You know, let's call this a freebie, just leave me a great review on the town bulletin board.
-                <<set $global.quest.karenQuestReward = "free">>
-                <<jump KarenQuestBegins>>
-            -> That's OK, I'll take whatever you have.
-                <<set $global.quest.karenQuestReward = "money">>
-                <<jump KarenQuestBegins>>
-            -> Ah, a big job like this... I'm gonna need at least 100g or a magical sword or something.
-                Karen: Oh, I do have my husbands sword, it's not magical to be fair, but looking at yours it would definitely be an upgrade! I'd be happy to part with it in return for your help.
-                    -> Sounds like we have a deal. One kid for one sword.
-                        <<set $global.quest.karenQuestReward = "sword">>
-                        << jump KarenQuestBegins>>
-                    -> Look, I already look like an idiot with this sword, you really think I'm going to take another non-magical sword. It's not like this is my first quest lady!
-                        Karen: OK, well let me know if you change your mind, who knows, maybe I'll win the lottery or something. Ugh, who am I kidding, not with my luck.
-                        -> I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!
-                            <<set $global.quest.karenQuestReward = "sword">>
-                            << jump KarenQuestBegins>>
-                        -> Well, good luck getting your kid back with no magical sword.
-                            <<jump KarenRejectedIntro>>
+    -> You know, let's call this a freebie, just leave me a great review on the town bulletin board.
+        <<set $karenQuestReward = "free">>
+        <<jump KarenQuestBegins>>
+    -> That's OK, I'll take whatever you have.
+        <<set $karenQuestReward = "money">>
+        <<jump KarenQuestBegins>>
+    -> Ah, a big job like this... I'm gonna need at least 100g or a magical sword or something.
+        Karen: Oh, I do have my husbands sword, it's not magical to be fair, but looking at yours it would definitely be an upgrade! I'd be happy to part with it in return for your help.
+            -> Sounds like we have a deal. One kid for one sword.
+                <<set $karenQuestReward = "sword">>
+                << jump KarenQuestBegins>>
+            -> Look, I already look like an idiot with this sword, you really think I'm going to take another non-magical sword. It's not like this is my first quest lady!
+                Karen: OK, well let me know if you change your mind, who knows, maybe I'll win the lottery or something. Ugh, who am I kidding, not with my luck.
+                -> I've reconsidered, I'll take the crappy sword. I expect a 5* review on the town billboard!
+                    <<set $karenQuestReward = "sword">>
+                    << jump KarenQuestBegins>>
+                -> Well, good luck getting your kid back with no magical sword.
+                    <<jump KarenRejectedIntro>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 165,845
+__PrivCrochet_tags: 
+title: KarenProgressCheck
+---
+Karen: How you getting on returning my Kimmy to me?
+    -> Err... I'm on it, I was just running some errands.
 ===

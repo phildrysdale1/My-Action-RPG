@@ -49,3 +49,4 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(8, gp_face1
 		responseSelected = 0; // resets response to first option for next set of responses
 	}
 
+

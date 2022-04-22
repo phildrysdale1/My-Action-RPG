@@ -20,7 +20,7 @@ global.gameSaveSlot = 0;
 global.playerHealthMax = 3.0;
 global.playerHealth = global.playerHealthMax;
 global.playerMoney = 0;
-global.playerGoodnessMax = 25;
+global.playerGoodnessMax = 50;
 
 // global player items
 global.playerHasAnyItems = false;
@@ -55,6 +55,7 @@ display_set_gui_size(RESOLUTION_W,RESOLUTION_H); // pixelatedpope's solution
 
 //===== Room Navigation =====//
 room_goto(ROOM_START);
+
 
 
 

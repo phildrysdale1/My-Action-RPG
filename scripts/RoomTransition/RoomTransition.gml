@@ -28,9 +28,14 @@ function RoomToAreaName (_room)
 		case rShop: return "The Shop"; break;
 		case rAndysHouse: return "Andy\'s House"; break;
 		case rAndysBasement: return "Andy\'s Basement"; break;
+		case rTown: return "The Town"; break;
 		default: return "Unknown Area"; break;
 	}
 }
+
+
+
+
 
 
 

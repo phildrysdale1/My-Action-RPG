@@ -68,7 +68,7 @@ function ActivateHatCat()
 
 function ActivateKaren()
 {
-	
+	//ChatterboxVariableSet(playerGoodness, global.playerGoodness);
 	NewConvo("KarenMeet01")
 	
 	#region // old code
@@ -324,4 +324,17 @@ function ActivateAndy()
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

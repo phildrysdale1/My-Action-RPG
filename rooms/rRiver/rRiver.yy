@@ -1,10 +1,7 @@
 {
   "isDnd": false,
   "volume": 1.0,
-  "parentRoom": {
-    "name": "rParent",
-    "path": "rooms/rParent/rParent.yy",
-  },
+  "parentRoom": null,
   "views": [
     {"inherit":true,"visible":true,"xview":0,"yview":0,"wview":320,"hview":180,"xport":0,"yport":0,"wport":1280,"hport":720,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":true,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -195,7 +192,7 @@
 1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1154,1347,1348,0,
 1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1442,1443,0,0,
 ],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"TilesUpper","tags":[],"resourceType":"GMRTileLayer",},
-    {"tilesetId":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":40,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":40,"TileSerialiseData":[
 75,96,94,75,76,77,78,79,96,84,84,75,79,75,96,75,79,0,0,0,
 90,94,90,90,91,92,93,94,90,84,84,94,94,94,94,94,94,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

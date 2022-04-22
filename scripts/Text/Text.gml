@@ -42,7 +42,7 @@ function NineSliceBoxStretched(sprite, x1, y1, x2, y2, index)
 // Create New Converstaions
 function NewConvo(_node)
 {
-	_obj = instance_create_layer(0,0, "Instances", oTextBox)
+	_obj = instance_create_layer(0,0, "UI", oTextBox)
 	with (_obj)
 	{
 		ChatterboxJump(global.chatterbox, _node); 
@@ -122,6 +122,7 @@ function DrawSetText(_color, _font, _halign, _valign)
 	draw_set_halign(_halign);
 	draw_set_valign(_valign);	
 }
+
 
 
 

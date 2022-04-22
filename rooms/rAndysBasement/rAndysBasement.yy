@@ -1,10 +1,7 @@
 {
   "isDnd": false,
   "volume": 1.0,
-  "parentRoom": {
-    "name": "rParent",
-    "path": "rooms/rParent/rParent.yy",
-  },
+  "parentRoom": null,
   "views": [
     {"inherit":true,"visible":true,"xview":0,"yview":0,"wview":320,"hview":180,"xport":0,"yport":0,"wport":1280,"hport":720,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":true,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -66,7 +63,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"TilesDecorations","tags":[],"resourceType":"GMRTileLayer",},
-    {"tilesetId":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":12,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":12,"TileSerialiseData":[
 2147483648,2147483648,2147483648,173,177,177,177,177,177,177,177,177,178,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,188,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,193,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,188,0,0,0,0,0,0,0,0,193,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
