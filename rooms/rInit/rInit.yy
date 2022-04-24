@@ -50,8 +50,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Meta",
+    "path": "folders/Rooms/Meta.yy",
   },
   "resourceVersion": "1.0",
   "name": "rInit",

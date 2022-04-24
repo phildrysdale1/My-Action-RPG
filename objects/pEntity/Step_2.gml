@@ -3,7 +3,7 @@
 
 //Depth sorting for all entities
 
-if (!global.gamePaused)
+if (!global.gamePaused) or (!instance_exists(oTextBox))
 {
 	depth = -bbox_bottom;
 	
@@ -78,6 +78,7 @@ if (!global.gamePaused)
 // Decay flash from being hit
 
 flash = max(flash-0.04, 0);
+
 
 
 

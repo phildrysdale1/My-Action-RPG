@@ -546,3 +546,12 @@ function __chatterboxStringIsSymbol(_string, _ignore_close_paren)
     
     return false;
 }
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ function NineSliceBoxStretched(sprite, x1, y1, x2, y2, index)
     var _h = _y2 - _y1	
 		
 	// Middle
-	draw_sprite_part_ext(argument0, _index, _size, _size, 1, 1, _x1 + _size, _y1 + _size, _w - (_size*2), _h - (_size * 2), c_white, draw_get_alpha());
+	draw_sprite_part_ext(argument0, _index, _size, _size, 1, 1, _x1 + _size, _y1 + _size, _w - (_size*2), _h - (_size * 2), c_white, 1);
 	
 	// Corners
 	// top left
@@ -28,23 +28,30 @@ function NineSliceBoxStretched(sprite, x1, y1, x2, y2, index)
 	
 	// Edges
 	// left
-	draw_sprite_part_ext(argument0, _index, 0, _size, _size, 1, _x1, _y1 + _size, 1, _h - (_size * 2), c_white, draw_get_alpha());
+	draw_sprite_part_ext(argument0, _index, 0, _size, _size, 1, _x1, _y1 + _size, 1, _h - (_size * 2), c_white, 1);
 	// right
-	draw_sprite_part_ext(argument0, _index, _size * 2, _size, _size, 1, _x1 + _w - _size, _y1 + _size, 1, _h - (_size * 2), c_white, draw_get_alpha());
+	draw_sprite_part_ext(argument0, _index, _size * 2, _size, _size, 1, _x1 + _w - _size, _y1 + _size, 1, _h - (_size * 2), c_white, 1);
 	// top
-	draw_sprite_part_ext(argument0, _index, _size, 0, 1, _size, _x1 + _size, _y1, _w - (_size * 2), 1, c_white, draw_get_alpha());
+	draw_sprite_part_ext(argument0, _index, _size, 0, 1, _size, _x1 + _size, _y1, _w - (_size * 2), 1, c_white, 1);
 	// bottom
-	draw_sprite_part_ext(argument0, _index, _size, _size * 2, 1, _size, _x1 + _size, _y1 + _h - (_size), _w - (_size * 2), 1, c_white, draw_get_alpha());
+	draw_sprite_part_ext(argument0, _index, _size, _size * 2, 1, _size, _x1 + _size, _y1 + _h - (_size), _w - (_size * 2), 1, c_white, 1);
 
 
 }
 
 // Create New Converstaions
-function NewConvo(_node)
+function NewConvo(_filename, _node)
 {
 	_obj = instance_create_layer(0,0, "UI", oTextBox)
 	with (_obj)
 	{
+		//Load your file.
+		ChatterboxLoadFromFile(_filename+".yarn"); //or whatever you called yours
+
+		// Create Chatterbox
+		global.chatterbox = ChatterboxCreate(_filename+".yarn"); 
+		
+		// Set start node
 		ChatterboxJump(global.chatterbox, _node); 
 	}
 }
@@ -122,6 +129,7 @@ function DrawSetText(_color, _font, _halign, _valign)
 	draw_set_halign(_halign);
 	draw_set_valign(_valign);	
 }
+
 
 
 

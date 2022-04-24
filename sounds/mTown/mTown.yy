@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mVillage.wav",
+  "soundFile": "mTown.wav",
   "duration": 124.799271,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mVillage",
+  "name": "mTown",
   "tags": [],
   "resourceType": "GMSound",
 }

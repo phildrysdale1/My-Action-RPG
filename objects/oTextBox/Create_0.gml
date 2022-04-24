@@ -1,16 +1,10 @@
 //Load your file.
-ChatterboxLoadFromFile("test.yarn"); //or whatever you called yours
+//ChatterboxLoadFromFile("test.yarn"); //or whatever you called yours
 // Create Chatterbox
-global.chatterbox = ChatterboxCreate("test.yarn"); 
-
-// Initialise Chatterbox by jumping to a node ("Start")
-ChatterboxJump(global.chatterbox,"KarenMeet01");
-text        = ChatterboxGetContent(global.chatterbox,0);
-nodeTitle   = ChatterboxGetCurrent(global.chatterbox);
+//global.chatterbox = ChatterboxCreate("test.yarn"); 
 
 // setviewport
 xx1 = camera_get_view_x(view_camera[0]);
-yy1 = camera_get_view_y(view_camera[0]);
 
 // Draw textbox as line in middle of screen to stretch out to edges.
 x1 = RESOLUTION_W/2;
@@ -28,3 +22,4 @@ textProgress = 0; // Represents number of character in the text box
 responseSelected = 0;
 
 background = 1;
+

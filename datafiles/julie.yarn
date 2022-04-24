@@ -1,0 +1,99 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -816,-233
+__PrivCrochet_tags: 
+title: Start_Node
+---
+<<declare $goodness = 0>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -471,-236
+__PrivCrochet_tags: 
+title: Dialogue_Start
+---
+<<if visited("Julie_QuestStart")>>
+    <<jump Julie_Progress>>
+<<else>>
+Julie: Hey how's it going?
+-> I'm doing amazing, the sun is shining and I'm looking for adventure!
+    Julie: That's nice, adventure you say? I don't suppose you might be able to help me?
+    -> Helping is my middle name! Well actually its Mildred after my Grandmother.
+        <<jump Julie_Explain>>
+    -> I'm gonna want some details before I commit, give me the run down...
+        <<jump Julie_Explain>>
+    -> Actually I forgot, I need to go wash my hair... so err... bye.
+-> None of your business!
+    Julie: Oh ok.
+    <<set $goodness -= 5>>
+-> What's the gossip around town?
+    Julie: That my husband is a piece of crap.
+    -> Oooh drama! I love it, tell me about this crapbag!
+        <<jump Julie_Explain>>
+    -> Yeah, that sounds like a you problem. I deal in adventure not domestics.
+    <<set $goodness -= 5>>
+<<endif>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -73,-459
+__PrivCrochet_tags: 
+title: Julie_Explain
+---
+Julie: Well my husband has left me and taken everything I own! Including my precious Kimmy!
+-> And Kimmy is?
+    Julie: She's my little baby! I simply can't live without her! That pig won't care for her like I do.
+    -> Well that just won't do! We need to get Kimmy back with her momma!
+        <<set $goodness += 5>>
+        <<jump Julie_QuestPrice>>
+    -> That sucks but I don't really do domestics so, I'm gonna go
+        <<set $goodness -= 5>>
+-> Damn Julie, that sucks but I don't really do domestics so, I'm gonna go.
+    <<set $goodness -= 5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 188,-86
+__PrivCrochet_tags: 
+title: Julie_Money
+---
+Julie: Ah, that might be a problem, my husband left me and took everything I own.
+    -> Well I guess I don't have an adventure then. Good luck.
+        <<set $goodness -= 5>>
+    -> You must have something, how about a 100g between the sofa cushions or a magical cape or something.
+        Julie: Oh, well there is my husbands sword. He left it behind when he ran aw...left me.
+        -> Is it magical? I already have a boring-ass regular sword.
+            Julie: No but it would do more damage than your sword for sure. You'd be welcom to have it if you brought my Kimmy back.
+            -> Sounds like a deal.
+                <<jump Julie_QuestStart>>
+            -> I'm not going to go to all that bother for a non-magical sword. Sorry lady.
+                <<set $goodness -= 1>>
+    -> That's terrible, I'll do it for free, what's the story?
+        <<set $goodness += 5>>
+        <<jump Julie_Explain>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 267,-410
+__PrivCrochet_tags: 
+title: Julie_QuestPrice
+---
+Julie: So you'll help me get Kimmy back?
+-> You've got it! I'm the perfect person for your quest.
+    <<set $goodness += 1>>
+    <<jump Julie_QuestStart>>
+-> Of course, if you've got the coin.
+    <<jump Julie_Money>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 554,-140
+__PrivCrochet_tags: 
+title: Julie_QuestStart
+---
+Julie: Thank you! Thank you! Thank you!
+-> I'm on it, next time you see me I'll be with little Kimmy.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -486,122
+__PrivCrochet_tags: 
+title: Julie_Progress
+---
+Julie: Any news?
+-> Sorry Julie... I was running some errands. I'm on it.
+===

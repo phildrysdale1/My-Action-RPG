@@ -180,8 +180,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "rParent",
-    "path": "folders/Rooms/rParent.yy",
+    "name": "Meta",
+    "path": "folders/Rooms/Meta.yy",
   },
   "resourceVersion": "1.0",
   "name": "rTitle",

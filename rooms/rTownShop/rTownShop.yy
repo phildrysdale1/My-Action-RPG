@@ -46,7 +46,7 @@
     "path": "folders/Rooms/Home Region.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rCave",
+  "name": "rTownShop",
   "tags": [],
   "resourceType": "GMRoom",
 }
