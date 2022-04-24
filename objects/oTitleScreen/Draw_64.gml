@@ -15,7 +15,7 @@ if (slotsVisible > 0)
 	{
 		// draw the boxes
 		var _y = 16 + _slot * 48;
-		var _x = RESOLUTION_W * 0.5;
+		var _x = 400 //RESOLUTION_W * 0.5;
 		var _img = 2;
 		if (slotSelected == _slot)
 		{
@@ -23,7 +23,7 @@ if (slotsVisible > 0)
 			draw_sprite(sMenuPlayer, sprIndex, _x-32, _y+24);
 
 		}
-		NineSliceBoxStretched(sTextBoxBg, _x, _y, 312, _y+48, _img);
+		NineSliceBoxStretched(sTextBoxBg, _x, _y, 600, _y+48, _img);
 		// Draw the save data (if it exists)
 		DrawSetText(c_white, fText, fa_left, fa_top);
 		if (slotData[_slot] == -1) // empty save slot
@@ -60,5 +60,6 @@ if (slotsVisible > 0)
 }
 	
 	
+
 
 
