@@ -40,7 +40,7 @@ if (IsChatterbox(global.chatterbox)) and (text != undefined)
 		_npcText.draw(_x,_y);
 		if (_npcText.get_wrapped())
 		{
-			_y += 15; // move start down for responses
+			_y += 20; // move start down for responses
 		}
 		
 	//Check for options and draw them. 
@@ -77,6 +77,7 @@ else
 	with (oPlayer) state = PlayerStateFree;
 	instance_destroy();
 }
+
 
 
 

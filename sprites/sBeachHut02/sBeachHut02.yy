@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f1f71a68-55ec-41de-81c9-2511a155b512","path":"sprites/sBeachHut02/sBeachHut02.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f1f71a68-55ec-41de-81c9-2511a155b512","path":"sprites/sBeachHut02/sBeachHut02.yy",},"LayerId":{"name":"793186cf-5e2f-4909-9fec-a371feffdba6","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBeachHut02","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","name":"f1f71a68-55ec-41de-81c9-2511a155b512","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"82dad21d-de19-4b8b-9318-291ca734cc0d","path":"sprites/sBeachHut02/sBeachHut02.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"82dad21d-de19-4b8b-9318-291ca734cc0d","path":"sprites/sBeachHut02/sBeachHut02.yy",},"LayerId":{"name":"c5790694-d255-4db2-97b6-d386db13e541","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBeachHut02","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","name":"82dad21d-de19-4b8b-9318-291ca734cc0d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sBeachHut02","path":"sprites/sBeachHut02/sBeachHut02.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c6c36d26-7894-40be-9ed0-7b311cf33278","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1f71a68-55ec-41de-81c9-2511a155b512","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70311b5c-30d4-4b55-9140-287cada462fd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82dad21d-de19-4b8b-9318-291ca734cc0d","path":"sprites/sBeachHut02/sBeachHut02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"793186cf-5e2f-4909-9fec-a371feffdba6","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5790694-d255-4db2-97b6-d386db13e541","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Buildings",
-    "path": "folders/Sprites/Entities/World/Scenery/Buildings.yy",
+    "path": "folders/Sprites/Entities/World/Outdoors/Scenery/Buildings.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBeachHut02",

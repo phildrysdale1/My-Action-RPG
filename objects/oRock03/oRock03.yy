@@ -41,7 +41,7 @@
   ],
   "parent": {
     "name": "Landscape",
-    "path": "folders/Objects/Entities/World/Scenery/Landscape.yy",
+    "path": "folders/Objects/Entities/World/Outdoors/Scenery/Landscape.yy",
   },
   "resourceVersion": "1.0",
   "name": "oRock03",

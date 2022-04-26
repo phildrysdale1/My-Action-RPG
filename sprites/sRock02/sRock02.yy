@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Landscape",
-    "path": "folders/Sprites/Entities/World/Scenery/Landscape.yy",
+    "path": "folders/Sprites/Entities/World/Outdoors/Scenery/Landscape.yy",
   },
   "resourceVersion": "1.0",
   "name": "sRock02",

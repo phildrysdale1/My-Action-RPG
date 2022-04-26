@@ -35,7 +35,7 @@
   ],
   "parent": {
     "name": "Plants",
-    "path": "folders/Objects/Entities/World/Scenery/Plants.yy",
+    "path": "folders/Objects/Entities/World/Outdoors/Scenery/Plants.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPlant",
