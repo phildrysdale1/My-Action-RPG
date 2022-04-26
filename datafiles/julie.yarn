@@ -5,6 +5,7 @@ __PrivCrochet_tags:
 title: Start_Node
 ---
 <<declare $goodness = 0>>
+<<declare $coins = 0>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -471,-236

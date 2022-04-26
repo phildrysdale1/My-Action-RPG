@@ -30,7 +30,7 @@
   ],
   "parent": {
     "name": "Fragments",
-    "path": "folders/Objects/Entities/World/Fragments.yy",
+    "path": "folders/Objects/Entities/World/Scenery/Fragments.yy",
   },
   "resourceVersion": "1.0",
   "name": "oFragPlant",

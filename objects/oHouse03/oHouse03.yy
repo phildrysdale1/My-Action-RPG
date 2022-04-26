@@ -32,7 +32,7 @@
   ],
   "parent": {
     "name": "Buildings",
-    "path": "folders/Objects/Entities/World/Buildings.yy",
+    "path": "folders/Objects/Entities/World/Scenery/Buildings.yy",
   },
   "resourceVersion": "1.0",
   "name": "oHouse03",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Buildings",
-    "path": "folders/Sprites/Entities/World/Buildings.yy",
+    "path": "folders/Sprites/Entities/World/Scenery/Buildings.yy",
   },
   "resourceVersion": "1.0",
   "name": "sHouse03",

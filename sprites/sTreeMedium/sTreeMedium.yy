@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Plants",
-    "path": "folders/Sprites/Entities/World/Plants.yy",
+    "path": "folders/Sprites/Entities/World/Scenery/Plants.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTreeMedium",

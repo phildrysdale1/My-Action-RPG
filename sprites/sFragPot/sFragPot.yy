@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "items",
-    "path": "folders/Sprites/Entities/World/items.yy",
+    "name": "Fragments",
+    "path": "folders/Sprites/Entities/World/Fragments.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFragPot",

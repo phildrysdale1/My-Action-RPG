@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sHouse05",
-    "path": "sprites/sHouse05/sHouse05.yy",
+    "name": "sHouse09",
+    "path": "sprites/sHouse09/sHouse09.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
   ],
   "parent": {
     "name": "Buildings",
-    "path": "folders/Objects/Entities/World/Buildings.yy",
+    "path": "folders/Objects/Entities/World/Scenery/Buildings.yy",
   },
   "resourceVersion": "1.0",
   "name": "oHouse09",

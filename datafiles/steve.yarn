@@ -1,20 +1,21 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1487,-502
+__PrivCrochet_position: -1487,-504
 __PrivCrochet_tags: 
 title: Steve_Start
 ---
 Steve: Hi I'm the shop keep around here. What can I do for you?
 -> What's for sale?
     Steve: Well I have a few things feel free to pick whatever you like.
-    -> Homemade bombs - 25g
-    -> Bow and 15x arrows  - 25g
-    -> Grappling Hook - 50g
+        -> Homemade bombs - 25g
+        -> Bow and 15x arrows  - 25g
+        -> Grappling Hook - 50g
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1657,-784
+__PrivCrochet_position: -1657,-786
 __PrivCrochet_tags: 
 title: Top_Node
 ---
 <<declare $goodness = 0>>
+<<declare $coins = 0>>
 ===

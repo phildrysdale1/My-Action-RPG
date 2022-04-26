@@ -30,8 +30,8 @@
     {"propertyId":{"name":"entityHookable","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Scenery",
-    "path": "folders/Objects/Entities/World/Scenery.yy",
+    "name": "Plants",
+    "path": "folders/Objects/Entities/World/Scenery/Plants.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTreePalm",

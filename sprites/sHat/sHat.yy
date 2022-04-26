@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "items",
-    "path": "folders/Sprites/Entities/World/items.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Entities/World/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sHat",

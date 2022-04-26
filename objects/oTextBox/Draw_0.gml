@@ -11,8 +11,8 @@ if (IsChatterbox(global.chatterbox)) and (text != undefined)
 	with (oPlayer) state = PlayerStateLocked;	
 	
 	// set Player Goodness
-	global.playerGoodness = ChatterboxVariableGet("goodness");
-	show_debug_message(global.playerGoodness);
+	ChatterboxVariableSet("goodness",global.playerGoodness);
+	ChatterboxVariableSet("coins",global.playerMoney);
 	
 	//box height calculations
 	//calc height of NPC text
@@ -73,9 +73,12 @@ if (IsChatterbox(global.chatterbox)) and (text != undefined)
 else
 {
 	global.playerGoodness = ChatterboxVariableGet("goodness");
+	global.playerMoney = ChatterboxVariableGet("coins");
 	with (oPlayer) state = PlayerStateFree;
 	instance_destroy();
 }
+
+
 
 
 

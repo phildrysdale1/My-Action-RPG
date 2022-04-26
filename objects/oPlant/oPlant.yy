@@ -34,8 +34,8 @@
     {"propertyId":{"name":"entityCollision","path":"objects/oCollision/oCollision.yy",},"objectId":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Scenery",
-    "path": "folders/Objects/Entities/World/Scenery.yy",
+    "name": "Plants",
+    "path": "folders/Objects/Entities/World/Scenery/Plants.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPlant",

@@ -19,7 +19,7 @@ global.gameSaveSlot = 0;
 // global player variables
 global.playerHealthMax = 3.0;
 global.playerHealth = global.playerHealthMax;
-global.playerMoney = 0;
+global.playerMoney = 500;
 global.playerGoodness = 10;
 global.playerGoodnessMax = 50;
 
@@ -32,10 +32,6 @@ global.playerAmmo[ITEM.BOMB] = 0;
 global.playerAmmo[ITEM.BOW] = 0;
 global.playerAmmo[ITEM.HEALTH] = 0;
 
-// global player goodness
-global.playerGoodness = 0; // moves - for evil + for good
-// dialogue trackers
-global.playerDialogue = 0; // set to certain numbers for tracking goodness in more complex conversations.
 
 //=====  manage quests ===== //
 global.questStatus = ds_map_create(); // Allows for readable quest names rather than just numbers
@@ -63,6 +59,8 @@ exception_unhandled_handler(function(_error)
     clipboard_set_text(string(_error));
     show_message(_error);
 });
+
+
 
 
 

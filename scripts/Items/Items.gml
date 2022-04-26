@@ -14,7 +14,7 @@ function DropItems(x, y, _items)
 			with(instance_create_layer(argument0, argument1, "Instances", _items[i]))
 			{
 				direction = _angle;
-				spd = 0.75 + (_itemsLen * 0.1) + random(0.1); // faster and spreads out the circle if there are more items with a small amount of randomness to avoid perfect circle
+				spd = 1.5 + (_itemsLen * 0.2) + random(0.2); // faster and spreads out the circle if there are more items with a small amount of randomness to avoid perfect circle
 			}
 			_angle += _anglePerItem;
 		}	
@@ -124,6 +124,7 @@ function PurchaseItem(_item, _amount, _cost)
 		NewTextBox("Sorry your broke ass can't afford this.",1)
 	}
 }
+
 
 
 

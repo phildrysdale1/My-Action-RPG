@@ -1,3 +1,4 @@
+show_debug_message(global.playerGoodness);
 /// @desc Pause the Game
 if (keyboard_check_pressed(vk_escape)) && (!instance_exists(oTransition)) && (oUI.visible == true)
 {
