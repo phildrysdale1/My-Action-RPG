@@ -69,7 +69,7 @@ function NewTextBox()
 	{
 		_obj = oText;
 	}
-	with (instance_create_layer(0,0,"Instances",_obj))
+	with (instance_create_layer(0,0,"UI",_obj))
 	{
 	message = argument[0];
 		if (instance_exists(other)) // other identifies the object that called the script
@@ -129,6 +129,7 @@ function DrawSetText(_color, _font, _halign, _valign)
 	draw_set_halign(_halign);
 	draw_set_valign(_valign);	
 }
+
 
 
 

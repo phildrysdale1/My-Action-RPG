@@ -82,9 +82,14 @@ function ActivateSteve()
 function ActivateAndy()
 {
 	NewConvo("Andy_Meet01");
-
 }
 
+
+function ActivateTownShop()
+{
+	NewConvo("townshop", "TownShop_Start");
+
+}
 
 
 

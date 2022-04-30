@@ -1,8 +1,8 @@
 /// @description Draw Textbox
 
 var _x = x1Target + 30;
-var _y = y1 + 20;
-var _wrapLength = x2Target - x1Target + 60
+var _y = y1 + 10;
+var _wrapLength = x2Target - x1Target - 60
 // Set drawing tools
 DrawSetText(c_black, fText, fa_center, fa_top);
 // Calc box height
@@ -45,6 +45,7 @@ if (_message.get_wrapped())
 //draw_text_ext((x1+x2) * 0.5, y1 + 8, _print,15,(RESOLUTION_W-20));
 //draw_set_color(c_white);
 //draw_text_ext((x1+x2) * 0.5, y1 + 7, _print,15,(RESOLUTION_W-20));
+
 
 
 
