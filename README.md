@@ -2,6 +2,8 @@
  
 A basic top down 2.5d RPG demo to teach me the basics of game design.
 
+Built in Game Maker Language which is very similar to Python in its general functioning.
+
 Key components are:
 
 * Character Movement
