@@ -14,3 +14,5 @@ Key components are:
 * Semi-complex diaglogue trees with good/evil moral compass based on dialogue
 * Sprite and level design
 * A miniture quest
+
+Some the code was heavily inspired by Shaun Spaulding's excellent Action RPG Tutorial on Youtube found [here](https://www.youtube.com/watch?v=upoXH9hAKUg&list=PLPRT_JORnIuosvhfax2TQTEmN7OYTcSvK)
