@@ -1,4 +1,4 @@
-# Game Maker Studio 2 Action RPG Demo
+# Action RPG Demo made in Gamemaker Studio
  
 A basic top down 2.5d RPG demo to teach me the basics of game design.
 
